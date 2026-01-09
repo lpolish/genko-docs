@@ -1,3 +1,9 @@
+---
+title: Dashboard Overview
+layout: default
+nav_order: 3
+---
+
 # Dashboard Overview
 
 The Dashboard is your command center in Genkō. It provides a quick overview of your clinic's daily operations and important metrics.

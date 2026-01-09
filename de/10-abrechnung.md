@@ -1,3 +1,10 @@
+---
+title: Abrechnung
+layout: default
+parent: Deutsch
+nav_order: 10
+---
+
 # Abrechnung und Abonnement
 
 Der Abrechnungsbereich ermöglicht Kontoinhabern die Verwaltung von Abonnements, Zahlungsmethoden und die Anzeige von Rechnungen. Nur Kontoinhaber haben Zugriff auf Abrechnungsfunktionen.

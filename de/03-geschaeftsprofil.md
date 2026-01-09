@@ -1,3 +1,10 @@
+---
+title: Geschäftsprofil
+layout: default
+parent: Deutsch
+nav_order: 3
+---
+
 # Geschäftsprofilverwaltung
 
 Ihr Geschäftsprofil ist die öffentliche Identität Ihrer Klinik innerhalb von Genkō. Ein vollständiges Profil schafft Vertrauen bei Patienten und gewährleistet reibungslose Abläufe.

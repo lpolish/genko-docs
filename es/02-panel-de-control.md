@@ -1,3 +1,10 @@
+---
+title: Panel de Control
+layout: default
+parent: Español
+nav_order: 2
+---
+
 # Vista General del Panel de Control
 
 El Panel de Control es tu centro de comando en Genkō. Proporciona una vista rápida de las operaciones diarias de tu clínica y métricas importantes.

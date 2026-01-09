@@ -1,3 +1,9 @@
+---
+title: Home
+layout: default
+nav_order: 1
+---
+
 # Genkō Healthcare Platform - Administrator Training Manual
 
 Welcome to the comprehensive training manual for the Genkō Healthcare Platform. This documentation is designed to help new business owners and administrators effectively onboard and utilize all features of the platform.

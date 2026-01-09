@@ -1,3 +1,10 @@
+---
+title: Personalverwaltung
+layout: default
+parent: Deutsch
+nav_order: 5
+---
+
 # Personalverwaltung
 
 Eine effektive Teamverwaltung ist entscheidend für einen reibungslosen Praxisbetrieb. Dieser Leitfaden behandelt das Hinzufügen, Verwalten und Konfigurieren von Mitarbeitern in Genkō.

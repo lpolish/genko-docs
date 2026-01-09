@@ -1,3 +1,9 @@
+---
+title: Staff Management
+layout: default
+nav_order: 6
+---
+
 # Staff Management
 
 Managing your team effectively is crucial for smooth clinic operations. This guide covers how to add, manage, and configure staff members in Genkō.

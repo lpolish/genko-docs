@@ -1,3 +1,9 @@
+---
+title: Quick Reference
+layout: default
+nav_order: 12
+---
+
 # Quick Reference Guide
 
 This quick reference guide provides at-a-glance information for common tasks and navigation in Genkō.

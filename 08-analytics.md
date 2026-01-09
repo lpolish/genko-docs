@@ -1,3 +1,9 @@
+---
+title: Analytics
+layout: default
+nav_order: 9
+---
+
 # Analytics Dashboard
 
 The Analytics Dashboard provides comprehensive insights into your clinic's performance. Track revenue, claims, payments, and key performance indicators (KPIs).

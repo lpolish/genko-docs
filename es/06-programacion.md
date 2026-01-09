@@ -1,3 +1,10 @@
+---
+title: Programación
+layout: default
+parent: Español
+nav_order: 6
+---
+
 # Programación y Calendario
 
 El módulo de Programación es el corazón de las operaciones diarias de tu clínica. Gestiona citas, disponibilidad de proveedores y sesiones de telemedicina todo en un solo lugar.

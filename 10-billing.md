@@ -1,3 +1,9 @@
+---
+title: Billing
+layout: default
+nav_order: 11
+---
+
 # Billing & Subscription
 
 The Billing section allows account owners to manage subscriptions, payment methods, and view invoices. Only account owners have access to billing features.

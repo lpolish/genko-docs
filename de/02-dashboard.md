@@ -1,3 +1,10 @@
+---
+title: Dashboard
+layout: default
+parent: Deutsch
+nav_order: 2
+---
+
 # Dashboard-Übersicht
 
 Das Dashboard ist Ihre Kommandozentrale in Genkō. Es bietet einen schnellen Überblick über den täglichen Betrieb Ihrer Klinik und wichtige Metriken.

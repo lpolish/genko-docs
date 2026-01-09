@@ -1,3 +1,9 @@
+---
+title: Scheduling
+layout: default
+nav_order: 7
+---
+
 # Scheduling & Calendar
 
 The Scheduling module is the heart of your clinic's daily operations. Manage appointments, provider availability, and telemedicine sessions all in one place.

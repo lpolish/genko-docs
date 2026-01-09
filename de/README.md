@@ -1,3 +1,10 @@
+---
+title: Deutsch
+layout: default
+nav_order: 40
+has_children: true
+---
+
 # Genkō Healthcare-Plattform - Administratoren-Schulungshandbuch
 
 Willkommen zum umfassenden Schulungshandbuch für die Genkō Healthcare-Plattform. Diese Dokumentation wurde entwickelt, um neuen Geschäftsinhabern und Administratoren zu helfen, alle Funktionen der Plattform effektiv einzuführen und zu nutzen.
