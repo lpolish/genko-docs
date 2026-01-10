@@ -2,10 +2,8 @@ title: Genkō Training Manual
 description: Comprehensive training manual for healthcare platform administrators
 remote_theme: just-the-docs/just-the-docs
 
-# Custom SCSS that imports theme and applies overrides
-sass:
-  sass_dir: _sass
-  style: compressed
+# Custom CSS for theme colors and dark mode support
+custom_css_path: assets/css/custom.css
 
 # Color scheme: light (JavaScript will handle theme switching)
 color_scheme: light

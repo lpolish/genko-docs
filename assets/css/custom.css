@@ -1,0 +1,137 @@
+/* Custom theme colors to match Next.js project styling */
+/* Based on the Genkō healthcare platform color scheme */
+
+/* Light mode colors (default) */
+:root {
+  --color-primary: #3b82f6 !important;        /* Vibrant blue (220 100% 50%) */
+  --color-primary-dark: #2563eb !important;   /* Darker blue for hover states */
+  --color-secondary: #a855f7 !important;      /* Vibrant purple (280 80% 60%) */
+  --color-accent: #14b8a6 !important;         /* Vibrant teal (175 100% 50%) */
+  --color-background: #ffffff !important;     /* White */
+  --color-foreground: #0f172a !important;     /* Dark gray (222 60% 10%) */
+  --color-muted: #f1f5f9 !important;          /* Light gray (210 40% 96%) */
+  --color-border: #e2e8f0 !important;         /* Light border (210 40% 90%) */
+  --color-code-background: #0f172a !important; /* Dark background for code blocks */
+  --color-code-foreground: #f1f5f9 !important; /* Light text for code */
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+  --color-primary: #60a5fa !important;        /* Bright blue (220 100% 60%) */
+  --color-primary-dark: #3b82f6 !important;   /* Darker blue for hover states */
+  --color-secondary: #a78bfa !important;      /* Bright purple (280 80% 50%) */
+  --color-accent: #2dd4bf !important;         /* More subdued teal (175 70% 35%) */
+  --color-background: #0a0a0a !important;     /* Deep purple-black (240 50% 8%) */
+  --color-foreground: #f1f5f9 !important;     /* Light gray (210 40% 98%) */
+  --color-muted: #1e293b !important;          /* Dark muted (240 30% 18%) */
+  --color-border: #334155 !important;         /* Dark border (240 30% 25%) */
+  --color-code-background: #0f172a !important; /* Keep code blocks dark */
+  --color-code-foreground: #f1f5f9 !important; /* Light text for code */
+}
+
+/* Force apply colors to Just the Docs elements */
+body {
+  background-color: var(--color-background) !important;
+  color: var(--color-foreground) !important;
+}
+
+.site-header {
+  background-color: var(--color-background) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.site-nav {
+  background-color: var(--color-muted) !important;
+}
+
+.site-nav a {
+  color: var(--color-foreground) !important;
+}
+
+.site-nav a:hover {
+  color: var(--color-primary) !important;
+}
+
+.main-content {
+  background-color: var(--color-background) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-foreground) !important;
+}
+
+a {
+  color: var(--color-primary) !important;
+}
+
+a:hover {
+  color: var(--color-primary-dark) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+
+code {
+  background-color: var(--color-muted) !important;
+  color: var(--color-foreground) !important;
+}
+
+pre {
+  background-color: var(--color-code-background) !important;
+  color: var(--color-code-foreground) !important;
+}
+
+.search-input {
+  background-color: var(--color-background) !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-foreground) !important;
+}
+
+.search-input:focus {
+  border-color: var(--color-primary) !important;
+}
+
+/* Theme selector styles */
+.theme-selector {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  background: var(--color-background) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 8px !important;
+  padding: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.theme-selector button {
+  background: none !important;
+  border: none !important;
+  padding: 8px !important;
+  margin: 0 2px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-size: 18px !important;
+  transition: all 0.2s ease !important;
+}
+
+.theme-selector button:hover {
+  background: var(--color-muted) !important;
+}
+
+.theme-selector button.active {
+  background: var(--color-primary) !important;
+  color: white !important;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
