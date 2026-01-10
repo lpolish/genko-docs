@@ -29,76 +29,26 @@
   --color-code-foreground: #f1f5f9; // Light text for code
 }
 
-// Direct CSS overrides for Just the Docs theme
-body {
-  background-color: var(--color-background) !important;
-  color: var(--color-foreground) !important;
-}
+// Override Just the Docs theme variables
+$color-primary: var(--color-primary);
+$color-primary-dark: var(--color-primary-dark);
+$color-secondary: var(--color-secondary);
+$color-accent: var(--color-accent);
+$body-background-color: var(--color-background);
+$body-heading-color: var(--color-foreground);
+$body-text-color: var(--color-foreground);
+$nav-child-link-color: var(--color-foreground);
+$link-color: var(--color-primary);
+$btn-primary-color: var(--color-primary);
+$base-button-color: var(--color-primary);
+$code-background-color: var(--color-code-background);
+$code-color: var(--color-code-foreground);
+$border-color: var(--color-border);
+$sidebar-color: var(--color-muted);
+$table-background-color: var(--color-background);
+$feedback-color: var(--color-accent);
 
-.site-header {
-  background-color: var(--color-background) !important;
-  border-bottom: 1px solid var(--color-border) !important;
-}
-
-.site-nav {
-  background-color: var(--color-muted) !important;
-}
-
-.site-nav a {
-  color: var(--color-foreground) !important;
-}
-
-.site-nav a:hover {
-  color: var(--color-primary) !important;
-}
-
-.main-content {
-  background-color: var(--color-background) !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-foreground) !important;
-}
-
-a {
-  color: var(--color-primary) !important;
-}
-
-a:hover {
-  color: var(--color-primary-dark) !important;
-}
-
-.btn-primary {
-  background-color: var(--color-primary) !important;
-  border-color: var(--color-primary) !important;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-primary-dark) !important;
-  border-color: var(--color-primary-dark) !important;
-}
-
-code {
-  background-color: var(--color-muted) !important;
-  color: var(--color-foreground) !important;
-}
-
-pre {
-  background-color: var(--color-code-background) !important;
-  color: var(--color-code-foreground) !important;
-}
-
-.search-input {
-  background-color: var(--color-background) !important;
-  border: 1px solid var(--color-border) !important;
-  color: var(--color-foreground) !important;
-}
-
-.search-input:focus {
-  border-color: var(--color-primary) !important;
-}
-
-// Theme selector styles
+// Custom theme selector styles
 .theme-selector {
   position: fixed;
   top: 20px;
@@ -134,4 +84,21 @@ pre {
 // Smooth transitions for theme changes
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+// Custom gradient backgrounds for enhanced visual appeal
+.main-content {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-muted) 100%);
+  min-height: 100vh;
+}
+
+// Enhanced callout styles to match the design system
+.callout-highlight {
+  background: linear-gradient(135deg, #dbeafe 0%, #f0fdf4 50%, #faf5ff 100%);
+  border-left: 4px solid var(--color-primary);
+}
+
+[data-theme="dark"] .callout-highlight {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #2d1b69 100%);
+  border-left: 4px solid var(--color-primary);
 }
