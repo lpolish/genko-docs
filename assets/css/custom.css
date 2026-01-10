@@ -1,101 +1,208 @@
 /* Custom theme colors to match Next.js project styling */
 /* Based on the Genkō healthcare platform color scheme */
 
-/* Light mode colors (default) */
-:root {
-  --color-primary: #3b82f6 !important;        /* Vibrant blue (220 100% 50%) */
-  --color-primary-dark: #2563eb !important;   /* Darker blue for hover states */
-  --color-secondary: #a855f7 !important;      /* Vibrant purple (280 80% 60%) */
-  --color-accent: #14b8a6 !important;         /* Vibrant teal (175 100% 50%) */
-  --color-background: #ffffff !important;     /* White */
-  --color-foreground: #0f172a !important;     /* Dark gray (222 60% 10%) */
-  --color-muted: #f1f5f9 !important;          /* Light gray (210 40% 96%) */
-  --color-border: #e2e8f0 !important;         /* Light border (210 40% 90%) */
-  --color-code-background: #0f172a !important; /* Dark background for code blocks */
-  --color-code-foreground: #f1f5f9 !important; /* Light text for code */
-}
+/* Direct class overrides for Just the Docs theme */
 
-/* Dark mode colors */
-[data-theme="dark"] {
-  --color-primary: #60a5fa !important;        /* Bright blue (220 100% 60%) */
-  --color-primary-dark: #3b82f6 !important;   /* Darker blue for hover states */
-  --color-secondary: #a78bfa !important;      /* Bright purple (280 80% 50%) */
-  --color-accent: #2dd4bf !important;         /* More subdued teal (175 70% 35%) */
-  --color-background: #0a0a0a !important;     /* Deep purple-black (240 50% 8%) */
-  --color-foreground: #f1f5f9 !important;     /* Light gray (210 40% 98%) */
-  --color-muted: #1e293b !important;          /* Dark muted (240 30% 18%) */
-  --color-border: #334155 !important;         /* Dark border (240 30% 25%) */
-  --color-code-background: #0f172a !important; /* Keep code blocks dark */
-  --color-code-foreground: #f1f5f9 !important; /* Light text for code */
-}
-
-/* Force apply colors to Just the Docs elements */
+/* Body and main background */
 body {
-  background-color: var(--color-background) !important;
-  color: var(--color-foreground) !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
 }
 
+[data-theme="dark"] body {
+  background-color: #0a0a0a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Site header */
 .site-header {
-  background-color: var(--color-background) !important;
-  border-bottom: 1px solid var(--color-border) !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
 }
 
+[data-theme="dark"] .site-header {
+  background-color: #0a0a0a !important;
+  border-bottom-color: #334155 !important;
+}
+
+/* Navigation sidebar */
 .site-nav {
-  background-color: var(--color-muted) !important;
+  background-color: #f1f5f9 !important;
 }
 
-.site-nav a {
-  color: var(--color-foreground) !important;
+[data-theme="dark"] .site-nav {
+  background-color: #1e293b !important;
 }
 
-.site-nav a:hover {
-  color: var(--color-primary) !important;
+/* Navigation links */
+.nav-list-link {
+  color: #0f172a !important;
 }
 
+.nav-list-link:hover {
+  color: #3b82f6 !important;
+}
+
+[data-theme="dark"] .nav-list-link {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .nav-list-link:hover {
+  color: #60a5fa !important;
+}
+
+/* Main content area */
 .main-content {
-  background-color: var(--color-background) !important;
+  background-color: #ffffff !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-foreground) !important;
+[data-theme="dark"] .main-content {
+  background-color: #0a0a0a !important;
 }
 
+/* Links */
 a {
-  color: var(--color-primary) !important;
+  color: #3b82f6 !important;
 }
 
 a:hover {
-  color: var(--color-primary-dark) !important;
+  color: #2563eb !important;
 }
 
-.btn-primary {
-  background-color: var(--color-primary) !important;
-  border-color: var(--color-primary) !important;
+[data-theme="dark"] a {
+  color: #60a5fa !important;
 }
 
-.btn-primary:hover {
-  background-color: var(--color-primary-dark) !important;
-  border-color: var(--color-primary-dark) !important;
+[data-theme="dark"] a:hover {
+  color: #3b82f6 !important;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #f1f5f9 !important;
+}
+
+/* Code blocks */
 code {
-  background-color: var(--color-muted) !important;
-  color: var(--color-foreground) !important;
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
 }
 
 pre {
-  background-color: var(--color-code-background) !important;
-  color: var(--color-code-foreground) !important;
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
 }
 
+[data-theme="dark"] code {
+  background-color: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] pre {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Search input */
 .search-input {
-  background-color: var(--color-background) !important;
-  border: 1px solid var(--color-border) !important;
-  color: var(--color-foreground) !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
 }
 
 .search-input:focus {
-  border-color: var(--color-primary) !important;
+  border-color: #3b82f6 !important;
+}
+
+[data-theme="dark"] .search-input {
+  background-color: #0a0a0a !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .search-input:focus {
+  border-color: #60a5fa !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb !important;
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #60a5fa !important;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background-color: #3b82f6 !important;
+}
+
+/* Tables */
+table {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+table th,
+table td {
+  border-color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] table {
+  background-color: #0a0a0a !important;
+  border-color: #334155 !important;
+}
+
+[data-theme="dark"] table th,
+[data-theme="dark"] table td {
+  border-color: #334155 !important;
+}
+
+/* Callouts */
+.callout {
+  border-left-color: #3b82f6 !important;
+}
+
+.callout-important {
+  border-left-color: #a855f7 !important;
+}
+
+.callout-warning {
+  border-left-color: #f59e0b !important;
+}
+
+.callout-danger {
+  border-left-color: #ef4444 !important;
+}
+
+[data-theme="dark"] .callout {
+  border-left-color: #60a5fa !important;
+}
+
+[data-theme="dark"] .callout-important {
+  border-left-color: #a78bfa !important;
+}
+
+[data-theme="dark"] .callout-warning {
+  border-left-color: #fbbf24 !important;
+}
+
+[data-theme="dark"] .callout-danger {
+  border-left-color: #f87171 !important;
 }
 
 /* Theme selector styles */
@@ -104,11 +211,16 @@ pre {
   top: 20px !important;
   right: 20px !important;
   z-index: 1000 !important;
-  background: var(--color-background) !important;
-  border: 1px solid var(--color-border) !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
   border-radius: 8px !important;
   padding: 8px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="dark"] .theme-selector {
+  background: #0a0a0a !important;
+  border-color: #334155 !important;
 }
 
 .theme-selector button {
@@ -120,15 +232,28 @@ pre {
   cursor: pointer !important;
   font-size: 18px !important;
   transition: all 0.2s ease !important;
+  color: #0f172a !important;
+}
+
+[data-theme="dark"] .theme-selector button {
+  color: #f1f5f9 !important;
 }
 
 .theme-selector button:hover {
-  background: var(--color-muted) !important;
+  background: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .theme-selector button:hover {
+  background: #1e293b !important;
 }
 
 .theme-selector button.active {
-  background: var(--color-primary) !important;
-  color: white !important;
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .theme-selector button.active {
+  background: #60a5fa !important;
 }
 
 /* Smooth transitions for theme changes */
