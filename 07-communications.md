@@ -1,3 +1,9 @@
+---
+title: Communications
+layout: default
+nav_order: 8
+---
+
 # Messages & Lead Management
 
 Effective communication with patients and potential leads is essential for a successful practice. Genkō provides robust messaging and lead management tools.

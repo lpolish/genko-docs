@@ -1,3 +1,10 @@
+---
+title: Analíticas
+layout: default
+parent: Español
+nav_order: 8
+---
+
 # Panel de Análisis
 
 El Panel de Análisis proporciona información integral sobre el rendimiento de tu clínica. Rastrea ingresos, reclamaciones, pagos e indicadores clave de rendimiento (KPIs).

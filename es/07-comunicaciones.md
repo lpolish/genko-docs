@@ -1,3 +1,10 @@
+---
+title: Comunicaciones
+layout: default
+parent: Español
+nav_order: 7
+---
+
 # Mensajes y Gestión de Prospectos
 
 La comunicación efectiva con pacientes y prospectos potenciales es esencial para una práctica exitosa. Genkō proporciona herramientas robustas de mensajería y gestión de prospectos.

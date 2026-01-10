@@ -1,3 +1,10 @@
+---
+title: Gestión de Pacientes
+layout: default
+parent: Español
+nav_order: 4
+---
+
 # Gestión de Pacientes
 
 La gestión de pacientes está en el centro de Genkō. Esta sección cubre todo lo que necesitas saber sobre agregar, gestionar y organizar tus registros de pacientes.

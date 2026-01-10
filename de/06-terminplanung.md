@@ -1,3 +1,10 @@
+---
+title: Terminplanung
+layout: default
+parent: Deutsch
+nav_order: 6
+---
+
 # Terminplanung und Kalender
 
 Das Terminplanungsmodul ist das Herzstück des täglichen Praxisbetriebs. Verwalten Sie Termine, Anbieterverfügbarkeit und Telemedizin-Sitzungen an einem Ort.

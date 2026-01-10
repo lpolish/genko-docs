@@ -1,3 +1,9 @@
+---
+title: Business Profile
+layout: default
+nav_order: 4
+---
+
 # Business Profile Management
 
 Your business profile is the public-facing identity of your clinic within Genkō. A complete profile builds trust with patients and ensures smooth operations.

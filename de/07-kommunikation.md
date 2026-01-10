@@ -1,3 +1,10 @@
+---
+title: Kommunikation
+layout: default
+parent: Deutsch
+nav_order: 7
+---
+
 # Nachrichten und Lead-Verwaltung
 
 Effektive Kommunikation mit Patienten und potenziellen Leads ist für eine erfolgreiche Praxis unerlässlich. Genkō bietet robuste Nachrichten- und Lead-Verwaltungstools.

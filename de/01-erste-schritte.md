@@ -1,3 +1,10 @@
+---
+title: Erste Schritte
+layout: default
+parent: Deutsch
+nav_order: 1
+---
+
 # Erste Schritte mit Genkō
 
 Dieser Leitfaden führt Sie durch den vollständigen Prozess der Erstellung Ihres Genkō-Kontos und der Ersteinrichtung.

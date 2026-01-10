@@ -1,3 +1,10 @@
+---
+title: Configuración
+layout: default
+parent: Español
+nav_order: 9
+---
+
 # Configuración y Ajustes
 
 La sección de Configuración te permite personalizar Genkō para que coincida con las necesidades de tu práctica. Esta guía cubre todas las opciones de configuración disponibles para administradores.

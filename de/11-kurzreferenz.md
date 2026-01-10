@@ -1,3 +1,10 @@
+---
+title: Kurzreferenz
+layout: default
+parent: Deutsch
+nav_order: 11
+---
+
 # Kurzreferenzhandbuch
 
 Dieses Kurzreferenzhandbuch bietet schnelle Informationen für häufige Aufgaben und Navigation in Genkō.

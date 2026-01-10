@@ -1,3 +1,10 @@
+---
+title: Gestión de Personal
+layout: default
+parent: Español
+nav_order: 5
+---
+
 # Gestión de Personal
 
 Gestionar tu equipo efectivamente es crucial para las operaciones fluidas de la clínica. Esta guía cubre cómo agregar, gestionar y configurar miembros del personal en Genkō.

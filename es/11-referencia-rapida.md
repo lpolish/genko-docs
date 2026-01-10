@@ -1,3 +1,10 @@
+---
+title: Referencia Rápida
+layout: default
+parent: Español
+nav_order: 11
+---
+
 # Guía de Referencia Rápida
 
 Esta guía de referencia rápida proporciona información de un vistazo para tareas comunes y navegación en Genkō.

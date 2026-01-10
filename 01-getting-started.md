@@ -1,3 +1,9 @@
+---
+title: Getting Started
+layout: default
+nav_order: 2
+---
+
 # Getting Started with Genkō
 
 This guide walks you through the complete process of creating your Genkō account and completing the initial setup.

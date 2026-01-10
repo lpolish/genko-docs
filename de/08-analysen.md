@@ -1,3 +1,10 @@
+---
+title: Analysen
+layout: default
+parent: Deutsch
+nav_order: 8
+---
+
 # Analyse-Dashboard
 
 Das Analyse-Dashboard bietet umfassende Einblicke in die Leistung Ihrer Praxis. Verfolgen Sie Umsatz, Ansprüche, Zahlungen und wichtige Leistungsindikatoren (KPIs).

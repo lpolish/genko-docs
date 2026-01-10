@@ -1,3 +1,10 @@
+---
+title: Facturación
+layout: default
+parent: Español
+nav_order: 10
+---
+
 # Facturación y Suscripción
 
 La sección de Facturación permite a los propietarios de cuenta gestionar suscripciones, métodos de pago y ver facturas. Solo los propietarios de cuenta tienen acceso a las funciones de facturación.

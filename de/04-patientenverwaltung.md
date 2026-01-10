@@ -1,3 +1,10 @@
+---
+title: Patientenverwaltung
+layout: default
+parent: Deutsch
+nav_order: 4
+---
+
 # Patientenverwaltung
 
 Die Patientenverwaltung ist das Herzstück von Genkō. Dieser Abschnitt behandelt alles, was Sie über das Hinzufügen, Verwalten und Organisieren Ihrer Patientenakten wissen müssen.

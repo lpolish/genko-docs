@@ -1,3 +1,9 @@
+---
+title: Patient Management
+layout: default
+nav_order: 5
+---
+
 # Patient Management
 
 Patient management is at the core of Genkō. This section covers everything you need to know about adding, managing, and organizing your patient records.

@@ -1,3 +1,10 @@
+---
+title: Primeros Pasos
+layout: default
+parent: Español
+nav_order: 1
+---
+
 # Primeros Pasos con Genkō
 
 Esta guía te lleva a través del proceso completo de crear tu cuenta de Genkō y completar la configuración inicial.

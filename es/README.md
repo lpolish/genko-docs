@@ -1,3 +1,10 @@
+---
+title: Español
+layout: default
+nav_order: 20
+has_children: true
+---
+
 # Plataforma de Salud Genkō - Manual de Capacitación para Administradores
 
 Bienvenido al manual de capacitación completo para la Plataforma de Salud Genkō. Esta documentación está diseñada para ayudar a nuevos propietarios de negocios y administradores a incorporarse y utilizar eficazmente todas las funciones de la plataforma.

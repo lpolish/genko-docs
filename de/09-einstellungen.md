@@ -1,3 +1,10 @@
+---
+title: Einstellungen
+layout: default
+parent: Deutsch
+nav_order: 9
+---
+
 # Einstellungen und Konfiguration
 
 Der Einstellungsbereich ermöglicht es Ihnen, Genkō an die Bedürfnisse Ihrer Praxis anzupassen. Dieser Leitfaden behandelt alle für Administratoren verfügbaren Konfigurationsoptionen.

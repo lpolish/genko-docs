@@ -1,3 +1,9 @@
+---
+title: Settings
+layout: default
+nav_order: 10
+---
+
 # Settings & Configuration
 
 The Settings section allows you to customize Genkō to match your practice's needs. This guide covers all configuration options available to administrators.

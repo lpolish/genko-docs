@@ -3,8 +3,6 @@ name: Deploy Training Manual to GitHub Pages
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'docs/training-manual/**'
   workflow_dispatch:
 
 permissions:
@@ -23,108 +21,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
 
-      - name: Copy documentation to site
+      - name: Build with Jekyll
         run: |
-          mkdir -p _site
-          cp -r docs/training-manual/* _site/
-
-      - name: Create index.html with redirect
-        run: |
-          cat > _site/index.html << 'EOF'
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Genkō Training Manual</title>
-            <style>
-              :root {
-                --bg-color: #0f172a;
-                --card-bg: #1e293b;
-                --text-color: #f1f5f9;
-                --accent: #06b6d4;
-              }
-              * { margin: 0; padding: 0; box-sizing: border-box; }
-              body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                background: var(--bg-color);
-                color: var(--text-color);
-                min-height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-              .container {
-                max-width: 800px;
-                padding: 2rem;
-                text-align: center;
-              }
-              h1 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-                background: linear-gradient(135deg, #06b6d4, #8b5cf6);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
-              p { color: #94a3b8; margin-bottom: 2rem; font-size: 1.1rem; }
-              .languages {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 1rem;
-                margin-top: 2rem;
-              }
-              .lang-card {
-                background: var(--card-bg);
-                border-radius: 12px;
-                padding: 1.5rem;
-                text-decoration: none;
-                color: var(--text-color);
-                transition: transform 0.2s, box-shadow 0.2s;
-                border: 1px solid rgba(255,255,255,0.1);
-              }
-              .lang-card:hover {
-                transform: translateY(-4px);
-                box-shadow: 0 10px 40px rgba(6, 182, 212, 0.2);
-                border-color: var(--accent);
-              }
-              .flag { font-size: 2.5rem; margin-bottom: 0.5rem; }
-              .lang-name { font-size: 1.2rem; font-weight: 600; }
-              .lang-native { color: #94a3b8; font-size: 0.9rem; }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-              <h1>Genkō Training Manual</h1>
-              <p>Comprehensive documentation for healthcare platform administrators</p>
-              <div class="languages">
-                <a href="./README.md" class="lang-card">
-                  <div class="flag">🇺🇸</div>
-                  <div class="lang-name">English</div>
-                  <div class="lang-native">Administrator Training Manual</div>
-                </a>
-                <a href="./es/README.md" class="lang-card">
-                  <div class="flag">🇪🇸</div>
-                  <div class="lang-name">Español</div>
-                  <div class="lang-native">Manual de Capacitación</div>
-                </a>
-                <a href="./ja/README.md" class="lang-card">
-                  <div class="flag">🇯🇵</div>
-                  <div class="lang-name">日本語</div>
-                  <div class="lang-native">トレーニングマニュアル</div>
-                </a>
-                <a href="./de/README.md" class="lang-card">
-                  <div class="flag">🇩🇪</div>
-                  <div class="lang-name">Deutsch</div>
-                  <div class="lang-native">Schulungshandbuch</div>
-                </a>
-              </div>
-            </div>
-          </body>
-          </html>
-          EOF
+          bundle install
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

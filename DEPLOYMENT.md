@@ -8,9 +8,9 @@ The training manual is automatically deployed to GitHub Pages when changes are p
 
 ### How It Works
 
-1. **Trigger**: When files in `docs/training-manual/` are modified and pushed to `main`
-2. **Build**: The workflow copies the documentation files and creates an index page
-3. **Deploy**: GitHub Pages automatically hosts the content
+1. **Trigger**: When any files are modified and pushed to `main`
+2. **Build**: Jekyll builds the markdown files with the just-the-docs theme, creating styled HTML pages with navigation
+3. **Deploy**: GitHub Pages automatically hosts the generated site
 
 ## Accessing the Documentation
 
@@ -59,7 +59,10 @@ The training manual is available in:
 ## Documentation Structure
 
 ```
-docs/training-manual/
+.
+├── _config.yml                  # Jekyll configuration
+├── Gemfile                      # Jekyll dependencies
+├── index.html                   # Redirect to README.html
 ├── README.md                    # English - Table of Contents
 ├── 01-getting-started.md        # Account creation & setup
 ├── 02-dashboard.md              # Dashboard overview
@@ -94,16 +97,30 @@ docs/training-manual/
 
 ## Customization
 
-### Changing the Landing Page
+### Changing the Theme Configuration
 
-Edit the inline HTML in `.github/workflows/docs.yml` under the "Create index.html" step.
+Edit `_config.yml` to customize:
+- Site title and description
+- Color scheme (light/dark)
+- Footer content
+- Search settings
+- Navigation order
 
 ### Adding New Languages
 
-1. Create a new folder under `docs/training-manual/` (e.g., `fr/` for French)
-2. Translate all 12 documentation files
-3. Update the main `README.md` to include the new language link
-4. Update the index.html in the workflow to include the new language card
+1. Create a new folder (e.g., `fr/` for French)
+2. Add a `README.md` with front matter:
+   ```yaml
+   ---
+   title: Français
+   layout: default
+   nav_order: 50
+   has_children: true
+   ---
+   ```
+3. Translate all 12 documentation files
+4. Add front matter to each file with `parent: Français`
+5. Update the main `README.md` to include the new language link
 
 ## Troubleshooting
 
@@ -118,6 +135,7 @@ Edit the inline HTML in `.github/workflows/docs.yml` under the "Create index.htm
 1. Ensure the repository has GitHub Pages enabled
 2. Check that the workflow completed successfully
 3. Verify file paths are correct
+4. Make sure each markdown file has proper front matter with `layout: default`
 
 ### Permission Errors
 

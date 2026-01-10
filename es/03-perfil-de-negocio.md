@@ -1,3 +1,10 @@
+---
+title: Perfil de Negocio
+layout: default
+parent: Español
+nav_order: 3
+---
+
 # Gestión del Perfil de Negocio
 
 Tu perfil de negocio es la identidad pública de tu clínica dentro de Genkō. Un perfil completo genera confianza con los pacientes y asegura operaciones fluidas.
