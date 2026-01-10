@@ -5,8 +5,8 @@ remote_theme: just-the-docs/just-the-docs
 # Custom CSS for theme colors and dark mode support
 custom_css_path: assets/css/style.scss
 
-# Color scheme: auto (respects system preference), light, dark
-color_scheme: auto
+# Color scheme: light (JavaScript will handle theme switching)
+color_scheme: light
 
 # Logo and branding
 logo: false
