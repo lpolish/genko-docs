@@ -1,6 +1,6 @@
 title: Genkō Healthcare Platform - Training Manual
 description: Comprehensive training manual for healthcare platform administrators
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # Color scheme: light, dark
 color_scheme: light
@@ -74,4 +74,5 @@ kramdown:
 
 # Plugin configuration
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
