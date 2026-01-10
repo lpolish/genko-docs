@@ -2,8 +2,11 @@ title: Genkō Training Manual
 description: Comprehensive training manual for healthcare platform administrators
 remote_theme: just-the-docs/just-the-docs
 
-# Color scheme: light, dark
-color_scheme: light
+# Custom CSS for theme colors and dark mode support
+custom_css_path: assets/css/style.scss
+
+# Color scheme: auto (respects system preference), light, dark
+color_scheme: auto
 
 # Logo and branding
 logo: false
@@ -38,16 +41,16 @@ back_to_top_text: "Back to top"
 callouts_level: quiet
 callouts:
   highlight:
-    color: yellow
+    color: blue
   important:
     title: Important
-    color: blue
+    color: purple
   new:
     title: New
     color: green
   note:
     title: Note
-    color: purple
+    color: blue
   warning:
     title: Warning
     color: red
