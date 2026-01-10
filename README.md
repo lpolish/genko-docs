@@ -6,7 +6,7 @@ nav_order: 1
 
 # Genkō Training Manual
 
-Welcome to the comprehensive training manual for the Genkō Healthcare Platform. Create your free account now at https://www.getgenko.com/en/auth/signup. This documentation is designed to help new business owners and administrators effectively onboard and utilize all features of the platform.
+Welcome to the comprehensive training manual for the Genkō Healthcare Platform. Create your free account now at [getgenko.com/en/auth/signup](https://www.getgenko.com/en/auth/signup). This documentation is designed to help new business owners and administrators effectively onboard and utilize all features of the platform.
 
 ## 🌐 Available Languages
 
