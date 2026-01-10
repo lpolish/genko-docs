@@ -1,6 +1,6 @@
 title: Genkō Training Manual
 description: Comprehensive training manual for healthcare platform administrators
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 # Custom CSS for theme colors and dark mode support
 custom_css_path: assets/css/custom.css
@@ -77,5 +77,4 @@ kramdown:
 
 # Plugin configuration
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
