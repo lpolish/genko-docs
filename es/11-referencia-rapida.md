@@ -346,4 +346,4 @@ Rutina diaria recomendada para admin:
 
 ---
 
-*[← Regresar a la Tabla de Contenidos](./README.md)*
+*[← Regresar a la Tabla de Contenidos](./)*
