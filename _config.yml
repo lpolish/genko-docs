@@ -1,11 +1,8 @@
 title: Genkō Training Manual
 description: Comprehensive training manual for healthcare platform administrators
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
-# Custom CSS for theme colors and dark mode support
-custom_css_path: assets/css/custom.css
-
-# Color scheme: light (JavaScript will handle theme switching)
+# Color scheme: light, dark
 color_scheme: light
 
 # Logo and branding
@@ -41,16 +38,16 @@ back_to_top_text: "Back to top"
 callouts_level: quiet
 callouts:
   highlight:
-    color: blue
+    color: yellow
   important:
     title: Important
-    color: purple
+    color: blue
   new:
     title: New
     color: green
   note:
     title: Note
-    color: blue
+    color: purple
   warning:
     title: Warning
     color: red
@@ -77,4 +74,5 @@ kramdown:
 
 # Plugin configuration
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
