@@ -347,4 +347,4 @@ Empfohlene tägliche Routine für Admins:
 
 ---
 
-*[← Zurück zum Inhaltsverzeichnis](./README.md)*
+*[← Zurück zum Inhaltsverzeichnis](./)*

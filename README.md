@@ -13,9 +13,9 @@ Welcome to the comprehensive training manual for the Genkō Healthcare Platform.
 | Language | Link |
 |----------|------|
 | 🇺🇸 **English** | You are here |
-| 🇪🇸 **Español** | [Manual de Capacitación en Español](./es/README.md) |
-| 🇯🇵 **日本語** | [日本語トレーニングマニュアル](./ja/README.md) |
-| 🇩🇪 **Deutsch** | [Administratoren-Schulungshandbuch](./de/README.md) |
+| 🇪🇸 **Español** | [Manual de Capacitación en Español](./es/) |
+| 🇯🇵 **日本語** | [日本語トレーニングマニュアル](./ja/) |
+| 🇩🇪 **Deutsch** | [Administratoren-Schulungshandbuch](./de/) |
 
 ## Table of Contents
 
