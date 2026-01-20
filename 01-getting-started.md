@@ -16,7 +16,17 @@ This guide walks you through the complete process of creating your Genkō accoun
 
 Navigate to the Genkō sign-up page at `yourdomain.com/auth/signup` or click "Start Free Trial" from the homepage.
 
+> 📸 **Screenshot Placeholder**: Homepage with "Start Free Trial" button highlighted
+> - **Location**: `screenshots/public-pages/homepage-cta.png`
+> - **Description**: The Genkō homepage (getgenko.com) showing the prominent "Start Free Trial" call-to-action button in the header navigation. This is the primary entry point for new users to begin their account creation process.
+> - **Note**: This is a public page and can be captured directly from getgenko.com without authentication.
+
 ### Step 2: Select Your Subscription Plan
+
+> 📸 **Screenshot Placeholder**: Pricing page showing all subscription tiers
+> - **Location**: `screenshots/public-pages/pricing-plans.png`
+> - **Description**: The pricing page from getgenko.com displaying all available subscription plans (Free, Starter, Professional, Growth) with their features, pricing, and comparison table. This helps users understand their options before signing up.
+> - **Note**: This is a public page and can be captured from the pricing section of getgenko.com.
 
 Genkō offers several subscription tiers to match your clinic's needs:
 
@@ -58,6 +68,10 @@ Genkō offers several subscription tiers to match your clinic's needs:
 
 ### Step 3: Enter Your Information
 
+> ⚠️ **Authentication Required**: The sign-up form is part of the authentication flow and requires user input. Screenshots will be added once a secure testing environment is available.
+> - **Pending Location**: `screenshots/admin-pages/auth/signup-form.png`
+> - **Description**: The registration form showing fields for full name, email, organization name, organization URL, password, and password confirmation. Includes terms of service checkbox and "Create Account" button.
+
 After selecting a plan, complete the registration form:
 
 1. **Full Name**: Enter your full name (this will be your admin profile name)
@@ -91,6 +105,10 @@ If you selected a paid plan:
 
 ### Signing In
 
+> ⚠️ **Authentication Required**: The sign-in flow requires user credentials and organization selection.
+> - **Pending Location**: `screenshots/admin-pages/auth/signin-flow.png`
+> - **Description**: Multi-screenshot showing the two-step login process: (1) Email entry screen, (2) Organization selection screen (if applicable), (3) Password entry screen. Shows magic link option as alternative.
+
 1. Go to `yourdomain.com/auth/signin`
 2. Enter your email address and click **Continue**
 3. Select your organization (if you have multiple)
@@ -110,6 +128,11 @@ Genkō uses a two-step login for enhanced security:
 ---
 
 ## 3. The Onboarding Wizard
+
+> 📸 **Screenshot Placeholder**: Dashboard with onboarding wizard
+> - **Location**: `screenshots/admin-pages/dashboard/onboarding-wizard.png`
+> - **Description**: Dashboard view showing the onboarding wizard banner at the top with progress percentage and list of setup steps (Welcome, Complete Profile, Add First Patient, Invite Team, Schedule Appointment). Shows both completed steps (green checkmarks) and pending steps (gray icons).
+> - **Note**: Requires authenticated access to the admin dashboard.
 
 After your first login, you'll see the **Onboarding Wizard** on your dashboard. This guides you through essential setup steps.
 
@@ -157,6 +180,11 @@ The wizard tracks your progress and shows:
 ---
 
 ## 4. Understanding the Admin Layout
+
+> 📸 **Screenshot Placeholder**: Complete admin interface layout
+> - **Location**: `screenshots/admin-pages/dashboard/admin-layout-overview.png`
+> - **Description**: Full-screen view of the admin interface showing the sidebar navigation on the left with all menu items (Dashboard, Patients, Scheduling, Analytics, Messages, Leads, Staff, Business Profile, Settings, Billing), the top header bar with global search, notifications, and user menu, and the main content area displaying the dashboard.
+> - **Note**: Requires authenticated access to the admin portal.
 
 After logging in, you'll see the main admin interface:
 

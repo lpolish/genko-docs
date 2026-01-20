@@ -1,0 +1,19 @@
+{
+  "name": "genko-docs-screenshots",
+  "version": "1.0.0",
+  "description": "Screenshot capture utilities for Genkō documentation",
+  "private": true,
+  "scripts": {
+    "capture:public": "node screenshots/capture-screenshots.example.js",
+    "install:playwright": "npm install -D @playwright/test && npx playwright install chromium"
+  },
+  "keywords": ["documentation", "screenshots", "playwright"],
+  "author": "Genkō Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

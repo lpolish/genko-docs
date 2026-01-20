@@ -21,6 +21,11 @@ The Billing section allows account owners to manage subscriptions, payment metho
 
 ## Billing Overview
 
+> 📸 **Screenshot Placeholder**: Billing page overview
+> - **Location**: `screenshots/admin-pages/billing/billing-overview.png`
+> - **Description**: Complete billing page showing current plan card with plan name, status badge, billing cycle, price, and renewal date. Usage statistics section displaying feature usage against plan limits (e.g., "3 of 10 staff members"). Payment method section with saved card information (last 4 digits masked). Billing history table showing past invoices with dates, amounts, and download links.
+> - **Note**: Requires authenticated access to the admin portal with Account Owner role.
+
 The Billing page displays:
 - **Current Plan**: Your active subscription
 - **Usage Statistics**: Feature usage against limits

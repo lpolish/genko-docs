@@ -30,6 +30,11 @@ A complete business profile:
 
 ## Business Profile Sections
 
+> 📸 **Screenshot Placeholder**: Business profile page overview
+> - **Location**: `screenshots/admin-pages/business-profile/profile-overview.png`
+> - **Description**: Full view of the business profile management page showing the organization information form, branding/logo section, contact information fields, and address information. Demonstrates the complete layout of the profile settings.
+> - **Note**: Requires authenticated access to the admin portal.
+
 ### 1. Organization Information
 
 #### Basic Details
@@ -59,6 +64,11 @@ A complete business profile:
 ---
 
 ### 2. Branding & Logo
+
+> 📸 **Screenshot Placeholder**: Logo upload section
+> - **Location**: `screenshots/admin-pages/business-profile/logo-upload.png`
+> - **Description**: The logo upload interface showing the drag-and-drop area, file format requirements (PNG, JPG, WEBP), size specifications (200x200px minimum, 2MB max), preview of uploaded logo, and save button. Includes visual feedback for drag-over state.
+> - **Note**: Requires authenticated access to the admin portal.
 
 #### Logo Upload
 - **Supported Formats**: PNG, JPG, WEBP

@@ -109,9 +109,17 @@ This manual is organized in the order you would typically set up and use the Gen
 3. **Administrative tasks** are covered in Staff Management, Analytics, and Settings.
 
 Each section includes:
-- Step-by-step instructions with screenshots placeholders
+- Step-by-step instructions with screenshot placeholders
 - Best practices and tips
 - Common issues and solutions
+
+### About Screenshots
+
+📸 **Screenshot placeholders** are included throughout this documentation to guide visual understanding. Screenshots are organized into:
+- **Public pages**: Captured from publicly accessible pages at getgenko.com
+- **Admin pages**: Require authenticated access to the admin portal
+
+See the [screenshots directory](./screenshots/README.md) for guidelines on capturing and contributing screenshots.
 
 ---
 

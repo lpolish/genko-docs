@@ -19,6 +19,11 @@ The Settings section allows you to customize Genkō to match your practice's nee
 
 ## Settings Structure
 
+> 📸 **Screenshot Placeholder**: Settings page with tabs
+> - **Location**: `screenshots/admin-pages/settings/settings-overview.png`
+> - **Description**: Settings page showing the horizontal tab navigation (Account, Clinic, Business, Staff, Availability, Insurance, Communications, Integrations) at the top, with the Account tab active displaying personal profile information fields, password change section, and preference controls. Shows the organized tab-based layout of all settings sections.
+> - **Note**: Requires authenticated access to the admin portal.
+
 Settings are organized into tabs:
 
 | Tab | Purpose |

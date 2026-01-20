@@ -33,6 +33,11 @@ The scheduling page has four main tabs:
 
 ## Calendar View
 
+> 📸 **Screenshot Placeholder**: Scheduling calendar view
+> - **Location**: `screenshots/admin-pages/scheduling/calendar-view.png`
+> - **Description**: Full calendar interface showing the week view with date navigation (Today button, forward/backward arrows, Week/Month selector), hourly time slots, color-coded appointments (blue for Scheduled, green for Confirmed, gray for Completed, red for Cancelled), telemedicine appointments marked with video icons, and multiple provider columns if applicable.
+> - **Note**: Requires authenticated access to the admin portal with sample appointment data.
+
 ### Calendar Navigation
 
 **Date Navigation:**
@@ -77,6 +82,11 @@ The scheduling page has four main tabs:
 ---
 
 ## Creating Appointments
+
+> 📸 **Screenshot Placeholder**: New appointment modal
+> - **Location**: `screenshots/admin-pages/scheduling/create-appointment.png`
+> - **Description**: The appointment creation modal showing patient selection dropdown (with search), date/time picker, appointment type selection (In-Person/Telemedicine), provider selection, duration selector, notes field, and Create Appointment button. Shows validation states for required fields.
+> - **Note**: Requires authenticated access to the admin portal.
 
 ### Method 1: From Calendar
 

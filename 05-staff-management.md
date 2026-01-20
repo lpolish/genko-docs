@@ -20,6 +20,11 @@ Managing your team effectively is crucial for smooth clinic operations. This gui
 
 ## Staff Overview
 
+> 📸 **Screenshot Placeholder**: Staff management page
+> - **Location**: `screenshots/admin-pages/staff/staff-overview.png`
+> - **Description**: Full view of the staff management page showing the header with "Add Staff" button, staff limit warning (e.g., "Using 3 of 10 staff seats"), search and filter options, and staff list table displaying team member names, roles (Admin, Provider, Nurse, Staff), email addresses, phone numbers, and status indicators (Active/Inactive).
+> - **Note**: Requires authenticated access to the admin portal with Admin role.
+
 The Staff page displays:
 - **Header**: Title and action buttons
 - **Search & Filters**: Find staff quickly
@@ -59,6 +64,11 @@ Genkō has four primary staff roles:
 ---
 
 ## Adding Staff Members
+
+> 📸 **Screenshot Placeholder**: Add staff member form
+> - **Location**: `screenshots/admin-pages/staff/add-staff-form.png`
+> - **Description**: The staff member creation modal showing input fields for Personal Information (First Name, Last Name, Email, Phone), Role & Access section with role dropdown (Admin, Provider, Nurse, Staff), professional information fields, and permission toggles. Shows Save and Cancel buttons.
+> - **Note**: Requires authenticated access to the admin portal with Admin role.
 
 ### Step 1: Click Add Staff
 

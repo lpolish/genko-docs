@@ -9,6 +9,10 @@ vendor/
 .bundle/
 Gemfile.lock
 
+# Node.js dependencies
+node_modules/
+package-lock.json
+
 # OS files
 .DS_Store
 Thumbs.db
