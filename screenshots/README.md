@@ -57,8 +57,11 @@ screenshots/
 # Install Playwright
 npm install -D @playwright/test
 
-# Run screenshot script
-npm run screenshots
+# Install browser
+npx playwright install chromium
+
+# Run screenshot capture script (public pages only)
+npm run capture:public
 ```
 
 ### Alternative: Manual Capture
