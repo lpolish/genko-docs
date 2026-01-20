@@ -21,6 +21,11 @@ Effective communication with patients and potential leads is essential for a suc
 
 ### Messages Overview
 
+> 📸 **Screenshot Placeholder**: Messages interface
+> - **Location**: `screenshots/admin-pages/communications/messages-overview.png`
+> - **Description**: Split-panel messages interface showing the left panel with conversations list (patient names, last message previews, status badges, priority indicators, AI icons, timestamps) and the right panel with the selected conversation view including message history, message input area with AI assistant toggle, and send button.
+> - **Note**: Requires authenticated access to the admin portal with sample conversations.
+
 The Messages interface has two main panels:
 
 **Left Panel: Conversations List**

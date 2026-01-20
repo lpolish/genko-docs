@@ -19,6 +19,11 @@ The Analytics Dashboard provides comprehensive insights into your clinic's perfo
 
 ## Dashboard Overview
 
+> 📸 **Screenshot Placeholder**: Analytics dashboard
+> - **Location**: `screenshots/admin-pages/analytics/analytics-dashboard.png`
+> - **Description**: Complete analytics dashboard showing date range selector and report type filters at the top, KPI cards displaying key metrics (total revenue, claims submitted, claims approved, average payment time), and various charts including revenue trends line graph, claims analysis pie chart, and payment analysis bar chart. Tabbed sections for detailed reports visible below.
+> - **Note**: Requires authenticated access to the admin portal with sample data.
+
 The Analytics page contains:
 - **Header**: Title and action buttons
 - **Filters**: Date range and report type

@@ -6,6 +6,11 @@ nav_order: 12
 
 # Quick Reference Guide
 
+> 📸 **Screenshot Placeholder**: Keyboard shortcuts overlay
+> - **Location**: `screenshots/admin-pages/quick-reference/keyboard-shortcuts.png`
+> - **Description**: The keyboard shortcuts help modal/overlay (triggered by Ctrl/Cmd + /) showing all available shortcuts organized by category (Global Shortcuts, Navigation, Patient Management, Scheduling, etc.). Dark semi-transparent overlay with white modal containing shortcut key combinations and their descriptions.
+> - **Note**: Can be captured from any authenticated page by pressing Ctrl/Cmd + /.
+
 This quick reference guide provides at-a-glance information for common tasks and navigation in Genkō.
 
 ---

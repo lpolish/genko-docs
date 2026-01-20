@@ -20,6 +20,11 @@ Patient management is at the core of Genkō. This section covers everything you 
 
 ## Patients Overview Page
 
+> 📸 **Screenshot Placeholder**: Patients list page
+> - **Location**: `screenshots/admin-pages/patients/patients-overview.png`
+> - **Description**: Full view of the patients page showing the header with "Add Patient" and "Import Patients" buttons, search bar with filters, patient list displayed in table/card format showing patient names, ages, contact info, and last visit date. Includes pagination controls at the bottom.
+> - **Note**: Requires authenticated access to the admin portal with sample patient data.
+
 The Patients page displays:
 - **Header**: Page title and action buttons
 - **Search & Filters**: Find patients quickly
@@ -31,6 +36,11 @@ The Patients page displays:
 ## Adding Patients
 
 ### Method 1: Manual Entry
+
+> 📸 **Screenshot Placeholder**: Add patient form
+> - **Location**: `screenshots/admin-pages/patients/add-patient-form.png`
+> - **Description**: The patient creation modal/form showing all input fields organized into sections: Basic Information (First Name, Last Name, Date of Birth), Contact Information (Email, Phone, Address), Medical Information (MRN, Blood Type, Gender, Preferred Language), Lifestyle Information (Smoking Status, Alcohol Use), and Insurance Information (Provider, Policy Number, Group Number). Shows Save and Cancel buttons at the bottom.
+> - **Note**: Requires authenticated access to the admin portal.
 
 1. Click the **Add Patient** button (+ icon)
 2. Fill in the patient form
@@ -76,6 +86,11 @@ The Patients page displays:
 ---
 
 ### Method 2: CSV Import
+
+> 📸 **Screenshot Placeholder**: CSV import interface
+> - **Location**: `screenshots/admin-pages/patients/csv-import.png`
+> - **Description**: The patient import modal showing the drag-and-drop CSV upload area, "Download Template" button, preview of CSV data with column mapping, duplicate handling options (Skip duplicates, Update duplicates), and "Start Import" button. Shows validation feedback for CSV format.
+> - **Note**: Requires authenticated access to the admin portal.
 
 For bulk patient imports:
 
