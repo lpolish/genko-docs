@@ -20,6 +20,11 @@ The Dashboard is your command center in Genkō. It provides a quick overview of 
 
 ## Dashboard Sections
 
+> 📸 **Screenshot Placeholder**: Complete dashboard view
+> - **Location**: `screenshots/admin-pages/dashboard/dashboard-complete-view.png`
+> - **Description**: Full dashboard view showing all main sections: greeting header with date/time, onboarding wizard banner (if applicable), quick stats cards (Total Patients, Today's Appointments, Telemedicine Sessions), today's schedule with appointment list, and quick actions panel. This provides an overview of the entire command center.
+> - **Note**: Requires authenticated access to the admin portal.
+
 ### 1. Greeting Header
 
 At the top of the dashboard, you'll see:
@@ -61,6 +66,11 @@ Click on any alert to address the issue directly.
 
 ### 4. Quick Stats Cards
 
+> 📸 **Screenshot Placeholder**: Quick stats cards section
+> - **Location**: `screenshots/admin-pages/dashboard/quick-stats-cards.png`
+> - **Description**: Close-up view of the three key metric cards showing Total Patients, Today's Appointments, and Telemedicine Sessions with their respective icons, values, and hover states. Demonstrates the visual design and interactivity of these clickable cards.
+> - **Note**: Requires authenticated access to the admin portal.
+
 Three key metrics are displayed as clickable cards:
 
 | Metric | Description | Click Action |
@@ -77,6 +87,11 @@ Each card shows:
 ---
 
 ### 5. Today's Schedule
+
+> 📸 **Screenshot Placeholder**: Today's schedule section
+> - **Location**: `screenshots/admin-pages/dashboard/todays-schedule.png`
+> - **Description**: The daily schedule view showing a list of today's appointments with patient names, appointment times, types (Regular/Follow-up), and status badges (Scheduled, Confirmed, In-Progress, Completed, Cancelled). Includes "View All" button at the bottom.
+> - **Note**: Requires authenticated access to the admin portal with sample appointment data.
 
 The main content area displays your daily schedule:
 
@@ -98,6 +113,11 @@ The main content area displays your daily schedule:
 ---
 
 ### 6. Quick Actions Panel
+
+> 📸 **Screenshot Placeholder**: Quick actions sidebar panel
+> - **Location**: `screenshots/admin-pages/dashboard/quick-actions-panel.png`
+> - **Description**: Sidebar panel displaying quick action shortcuts including "Add Patient", "Schedule Appointment", and "Start Telemedicine" with their respective icons, titles, and brief descriptions. Shows hover animations and click states.
+> - **Note**: Requires authenticated access to the admin portal.
 
 A sidebar panel with shortcuts to common tasks:
 
