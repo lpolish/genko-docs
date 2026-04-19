@@ -1,10 +1,10 @@
-# Training Manual - Deployment Guide
+# Genkō Docs Mirror - Deployment Guide
 
-This guide explains how to deploy the training manual documentation as a website using GitHub Pages.
+This guide explains how the Jekyll Genkō docs mirror is deployed to GitHub Pages.
 
 ## Automatic Deployment
 
-The training manual is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The workflow file is located at `.github/workflows/docs.yml`.
+The docs mirror is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The workflow file is located at `.github/workflows/docs.yml`.
 
 ### How It Works
 
@@ -31,7 +31,7 @@ You can also manually trigger a deployment:
 
 1. Go to the repository on GitHub
 2. Navigate to **Actions** tab
-3. Select **"Deploy Training Manual to GitHub Pages"**
+3. Select **"Deploy Genkō Docs Mirror to GitHub Pages"**
 4. Click **"Run workflow"**
 5. Select the `main` branch
 6. Click **"Run workflow"** button
@@ -47,7 +47,7 @@ To enable GitHub Pages for your repository:
 
 ## Available Languages
 
-The training manual is available in:
+The docs mirror is available in:
 
 | Language | Path |
 |----------|------|
@@ -62,18 +62,18 @@ The training manual is available in:
 .
 ├── _config.yml                  # Jekyll configuration
 ├── Gemfile                      # Jekyll dependencies
-├── index.html                   # Redirect to README.html
-├── README.md                    # English - Table of Contents
-├── 01-getting-started.md        # Account creation & setup
+├── index.html                   # English site homepage
+├── README.md                    # Repository overview
+├── 01-getting-started.md        # First-day setup
 ├── 02-dashboard.md              # Dashboard overview
-├── 03-business-profile.md       # Business profile management
-├── 04-patient-management.md     # Patient management
-├── 05-staff-management.md       # Staff management
-├── 06-scheduling.md             # Scheduling & calendar
-├── 07-communications.md         # Messages & leads
-├── 08-analytics.md              # Analytics dashboard
-├── 09-settings.md               # Settings & configuration
-├── 10-billing.md                # Billing & subscription
+├── 03-business-profile.md       # Practice profile & services
+├── 04-patient-management.md     # Patients
+├── 05-staff-management.md       # Providers & team members
+├── 06-scheduling.md             # Appointments & scheduling
+├── 07-communications.md         # Patient portal & integrations
+├── 08-analytics.md              # Analytics & insights
+├── 09-settings.md               # Settings, AI & API
+├── 10-billing.md                # Plans & billing
 ├── 11-quick-reference.md        # Quick reference guide
 │
 ├── es/                          # Spanish version
@@ -91,7 +91,7 @@ The training manual is available in:
 
 ## Updating Documentation
 
-1. Edit the markdown files in the appropriate language folder
+1. Edit the English mirror pages in the repository root or the language-specific files in the appropriate subfolder
 2. Commit and push changes to `main`
 3. The workflow will automatically deploy updates
 

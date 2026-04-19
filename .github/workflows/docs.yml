@@ -1,4 +1,4 @@
-name: Deploy Training Manual to GitHub Pages
+name: Deploy Genkō Docs Mirror to GitHub Pages
 
 on:
   push:
