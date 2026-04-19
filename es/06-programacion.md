@@ -3,6 +3,7 @@ title: Programación
 layout: default
 parent: Español
 nav_order: 6
+redirect_to: https://getgenko.com/docs
 ---
 
 # Programación y Calendario

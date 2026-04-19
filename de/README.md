@@ -2,6 +2,7 @@
 title: Deutsch
 layout: default
 nav_order: 40
+redirect_to: https://getgenko.com/docs
 has_children: true
 ---
 

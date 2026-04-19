@@ -2,6 +2,7 @@
 title: Quick Reference
 layout: default
 nav_order: 12
+redirect_to: https://getgenko.com/docs
 ---
 
 # Quick Reference Guide

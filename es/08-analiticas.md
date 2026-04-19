@@ -3,6 +3,7 @@ title: Analíticas
 layout: default
 parent: Español
 nav_order: 8
+redirect_to: https://getgenko.com/docs
 ---
 
 # Panel de Análisis

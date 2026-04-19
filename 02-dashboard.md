@@ -2,6 +2,7 @@
 title: Dashboard Overview
 layout: default
 nav_order: 3
+redirect_to: https://getgenko.com/docs#overview
 ---
 
 # Dashboard Overview

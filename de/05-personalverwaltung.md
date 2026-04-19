@@ -3,6 +3,7 @@ title: Personalverwaltung
 layout: default
 parent: Deutsch
 nav_order: 5
+redirect_to: https://getgenko.com/docs
 ---
 
 # Personalverwaltung

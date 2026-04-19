@@ -2,6 +2,7 @@
 title: Billing
 layout: default
 nav_order: 11
+redirect_to: https://getgenko.com/docs#billing
 ---
 
 # Billing & Subscription

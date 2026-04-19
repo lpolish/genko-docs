@@ -2,6 +2,7 @@
 title: Scheduling
 layout: default
 nav_order: 7
+redirect_to: https://getgenko.com/docs#appointments
 ---
 
 # Scheduling & Calendar

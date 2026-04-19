@@ -1,0 +1,12 @@
+{% assign redirect_url = page.redirect_to | default: "https://getgenko.com/docs" %}
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url={{ redirect_url }}">
+<link rel="canonical" href="{{ redirect_url }}">
+<script>
+(function() {
+  var redirectUrl = {{ redirect_url | jsonify }};
+  if (typeof window !== 'undefined' && window.location.href !== redirectUrl) {
+    window.location.replace(redirectUrl);
+  }
+})();
+</script>

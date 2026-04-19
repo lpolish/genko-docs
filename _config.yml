@@ -1,5 +1,6 @@
-title: Genkō Training Manual
-description: Comprehensive training manual for healthcare platform administrators
+title: Genkō Docs (Archived)
+description: >-
+  Archived Genkō documentation. The current documentation is at getgenko.com/docs.
 remote_theme: just-the-docs/just-the-docs
 
 # Color scheme: light, dark
@@ -10,8 +11,8 @@ logo: false
 
 # Aux links for navigation
 aux_links:
-  "View on GitHub":
-    - "https://github.com/lpolish/genko-docs"
+  "New docs →":
+    - "https://getgenko.com/docs"
 
 aux_links_new_tab: true
 
@@ -56,6 +57,8 @@ callouts:
 exclude:
   - .git
   - .github
+  - .gitignore
+  - .bundle
   - node_modules
   - vendor
   - "*.gem"
@@ -63,6 +66,15 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - DEPLOYMENT.md
+  - backup-jekyll
+  - blog
+  - docs
+  - src
+  - static
+  - docusaurus.config.ts
+  - package.json
+  - sidebars.ts
+  - tsconfig.json
 
 # Build settings
 markdown: kramdown

@@ -3,6 +3,7 @@ title: Geschäftsprofil
 layout: default
 parent: Deutsch
 nav_order: 3
+redirect_to: https://getgenko.com/docs
 ---
 
 # Geschäftsprofilverwaltung

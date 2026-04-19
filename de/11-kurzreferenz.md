@@ -3,6 +3,7 @@ title: Kurzreferenz
 layout: default
 parent: Deutsch
 nav_order: 11
+redirect_to: https://getgenko.com/docs
 ---
 
 # Kurzreferenzhandbuch

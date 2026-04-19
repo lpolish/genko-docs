@@ -2,6 +2,7 @@
 title: Analytics
 layout: default
 nav_order: 9
+redirect_to: https://getgenko.com/docs#analytics
 ---
 
 # Analytics Dashboard

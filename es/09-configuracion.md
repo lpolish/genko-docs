@@ -3,6 +3,7 @@ title: Configuración
 layout: default
 parent: Español
 nav_order: 9
+redirect_to: https://getgenko.com/docs
 ---
 
 # Configuración y Ajustes

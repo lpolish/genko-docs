@@ -3,6 +3,7 @@ title: Kommunikation
 layout: default
 parent: Deutsch
 nav_order: 7
+redirect_to: https://getgenko.com/docs
 ---
 
 # Nachrichten und Lead-Verwaltung

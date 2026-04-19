@@ -2,6 +2,7 @@
 title: Staff Management
 layout: default
 nav_order: 6
+redirect_to: https://getgenko.com/docs#team
 ---
 
 # Staff Management

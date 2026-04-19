@@ -2,6 +2,7 @@
 title: Getting Started
 layout: default
 nav_order: 2
+redirect_to: https://getgenko.com/docs#getting-started
 ---
 
 # Getting Started with Genkō

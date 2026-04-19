@@ -3,6 +3,7 @@ title: Facturación
 layout: default
 parent: Español
 nav_order: 10
+redirect_to: https://getgenko.com/docs
 ---
 
 # Facturación y Suscripción

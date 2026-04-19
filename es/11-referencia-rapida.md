@@ -3,6 +3,7 @@ title: Referencia Rápida
 layout: default
 parent: Español
 nav_order: 11
+redirect_to: https://getgenko.com/docs
 ---
 
 # Guía de Referencia Rápida

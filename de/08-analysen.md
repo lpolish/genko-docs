@@ -3,6 +3,7 @@ title: Analysen
 layout: default
 parent: Deutsch
 nav_order: 8
+redirect_to: https://getgenko.com/docs
 ---
 
 # Analyse-Dashboard

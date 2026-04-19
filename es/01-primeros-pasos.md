@@ -3,6 +3,7 @@ title: Primeros Pasos
 layout: default
 parent: Español
 nav_order: 1
+redirect_to: https://getgenko.com/docs
 ---
 
 # Primeros Pasos con Genkō

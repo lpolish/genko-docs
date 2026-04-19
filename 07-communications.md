@@ -2,6 +2,7 @@
 title: Communications
 layout: default
 nav_order: 8
+redirect_to: https://getgenko.com/docs#integrations
 ---
 
 # Messages & Lead Management

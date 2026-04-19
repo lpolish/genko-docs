@@ -2,6 +2,7 @@
 title: 日本語
 layout: default
 nav_order: 30
+redirect_to: https://getgenko.com/docs
 has_children: true
 ---
 

@@ -3,6 +3,7 @@ title: Perfil de Negocio
 layout: default
 parent: Español
 nav_order: 3
+redirect_to: https://getgenko.com/docs
 ---
 
 # Gestión del Perfil de Negocio

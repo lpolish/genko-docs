@@ -3,6 +3,7 @@ title: Erste Schritte
 layout: default
 parent: Deutsch
 nav_order: 1
+redirect_to: https://getgenko.com/docs
 ---
 
 # Erste Schritte mit Genkō

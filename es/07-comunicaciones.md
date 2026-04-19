@@ -3,6 +3,7 @@ title: Comunicaciones
 layout: default
 parent: Español
 nav_order: 7
+redirect_to: https://getgenko.com/docs
 ---
 
 # Mensajes y Gestión de Prospectos

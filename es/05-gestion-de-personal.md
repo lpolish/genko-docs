@@ -3,6 +3,7 @@ title: Gestión de Personal
 layout: default
 parent: Español
 nav_order: 5
+redirect_to: https://getgenko.com/docs
 ---
 
 # Gestión de Personal

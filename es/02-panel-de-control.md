@@ -3,6 +3,7 @@ title: Panel de Control
 layout: default
 parent: Español
 nav_order: 2
+redirect_to: https://getgenko.com/docs
 ---
 
 # Vista General del Panel de Control

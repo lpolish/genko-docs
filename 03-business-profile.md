@@ -2,6 +2,7 @@
 title: Business Profile
 layout: default
 nav_order: 4
+redirect_to: https://getgenko.com/docs#getting-started
 ---
 
 # Business Profile Management

@@ -2,6 +2,7 @@
 title: Settings
 layout: default
 nav_order: 10
+redirect_to: https://getgenko.com/docs#getting-started
 ---
 
 # Settings & Configuration

@@ -2,6 +2,7 @@
 title: Patient Management
 layout: default
 nav_order: 5
+redirect_to: https://getgenko.com/docs#patients
 ---
 
 # Patient Management

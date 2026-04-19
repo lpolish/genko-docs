@@ -3,6 +3,7 @@ title: Dashboard
 layout: default
 parent: Deutsch
 nav_order: 2
+redirect_to: https://getgenko.com/docs
 ---
 
 # Dashboard-Übersicht

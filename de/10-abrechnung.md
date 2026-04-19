@@ -3,6 +3,7 @@ title: Abrechnung
 layout: default
 parent: Deutsch
 nav_order: 10
+redirect_to: https://getgenko.com/docs
 ---
 
 # Abrechnung und Abonnement

@@ -3,6 +3,7 @@ title: Terminplanung
 layout: default
 parent: Deutsch
 nav_order: 6
+redirect_to: https://getgenko.com/docs
 ---
 
 # Terminplanung und Kalender

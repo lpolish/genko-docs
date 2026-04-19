@@ -3,6 +3,7 @@ title: Patientenverwaltung
 layout: default
 parent: Deutsch
 nav_order: 4
+redirect_to: https://getgenko.com/docs
 ---
 
 # Patientenverwaltung
