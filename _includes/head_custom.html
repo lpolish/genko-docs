@@ -1,4 +1,5 @@
-{% assign redirect_url = page.redirect_to | default: "https://getgenko.com/docs" %}
+{% if page.redirect_to %}
+{% assign redirect_url = page.redirect_to %}
 <meta name="robots" content="noindex">
 <meta http-equiv="refresh" content="0; url={{ redirect_url }}">
 <link rel="canonical" href="{{ redirect_url }}">
@@ -10,3 +11,4 @@
   }
 })();
 </script>
+{% endif %}
