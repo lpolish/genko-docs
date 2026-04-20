@@ -1,342 +1,97 @@
 ---
-title: Patientenverwaltung
+title: Patienten
 layout: default
-parent: Deutsch
 nav_order: 4
-redirect_to: https://getgenko.com/docs
+parent: Deutsch
 ---
 
-# Patientenverwaltung
+# Patienten
 
-Die Patientenverwaltung ist das Herzstück von Genkō. Dieser Abschnitt behandelt alles, was Sie über das Hinzufügen, Verwalten und Organisieren Ihrer Patientenakten wissen müssen.
-
----
-
-## Zugriff auf Patienten
-
-1. Klicken Sie auf **Patienten** in der Seitenleiste
-2. Oder verwenden Sie die Schnellaktion "Patient hinzufügen" vom Dashboard
-3. URL: `/admin/patients`
-
----
-
-## Patienten-Übersichtsseite
-
-Die Patientenseite zeigt:
-- **Header**: Seitentitel und Aktionsbuttons
-- **Suche und Filter**: Patienten schnell finden
-- **Patientenliste**: Tabellen-/Kartenansicht aller Patienten
-- **Paginierung**: Durch große Patientenlisten navigieren
+Der Patientenbereich speichert die Datensätze, die Ihr Team für Terminplanung, Kommunikation und Terminverlauf benötigt. Halten Sie Patientenakten anfangs leichtgewichtig und ergänzen Sie später mehr Details, wenn Ihr Workflow reifer wird.
 
 ---
 
 ## Patienten hinzufügen
 
-### Methode 1: Manuelle Eingabe
+Öffnen Sie **Patients** in der Seitenleiste und klicken Sie auf **Add Patient**.
 
-1. Klicken Sie auf den **Patient hinzufügen**-Button (+Symbol)
-2. Füllen Sie das Patientenformular aus
-3. Klicken Sie auf **Speichern**
+Die häufigsten Felder sind:
 
-#### Patientenformularfelder
+- **Vollständiger Name** - erforderlich
+- **E-Mail** - empfohlen für Bestätigungen und Erinnerungen
+- **Telefon** - nützlich für Nachverfolgung und manuellen Kontakt
+- **Geburtsdatum** - optionaler klinischer Kontext
+- **Notizen** - optionale interne Hinweise wie Präferenzen oder wichtiger Kontext
 
-**Grundinformationen (Erforderlich):**
-| Feld | Beschreibung |
-|------|--------------|
-| Vorname | Vorname des Patienten |
-| Nachname | Nachname des Patienten |
-| Geburtsdatum | Geburtsdatum für Altersberechnung |
-
-**Kontaktinformationen (Empfohlen):**
-| Feld | Beschreibung |
-|------|--------------|
-| E-Mail | E-Mail-Adresse des Patienten |
-| Telefon | Primäre Kontaktnummer |
-| Adresse | Wohnadresse |
-
-**Medizinische Informationen:**
-| Feld | Beschreibung |
-|------|--------------|
-| Aktenzeichen | Eindeutige Kennung (automatisch generiert wenn leer) |
-| Blutgruppe | A+, A-, B+, B-, AB+, AB-, O+, O- |
-| Geschlecht | Männlich, Weiblich, Sonstig, Keine Angabe |
-| Bevorzugte Sprache | Sprachpräferenz für Kommunikation |
-
-**Lebensstil-Informationen:**
-| Feld | Beschreibung |
-|------|--------------|
-| Raucherstatus | Nie, Ehemaliger, Aktuell |
-| Alkoholkonsum | Keiner, Gelegentlich, Moderat, Häufig |
-
-**Versicherungsinformationen:**
-| Feld | Beschreibung |
-|------|--------------|
-| Versicherungsanbieter | Name der Versicherungsgesellschaft |
-| Versicherungsnummer | Versicherungspolicennummer |
-| Gruppennummer | Gruppennummer (falls zutreffend) |
+Wenn Sie eine bestehende Liste migrieren, verwenden Sie **Import**, um eine CSV- oder Excel-Datei hochzuladen, statt Daten einzeln neu einzugeben.
 
 ---
 
-### Methode 2: CSV-Import
+## Patientenakten ansehen
 
-Für Massen-Patientenimporte:
+Klicken Sie auf den Namen eines Patienten, um die Detailseite zu öffnen. Von dort aus kann Ihr Team:
 
-1. Klicken Sie auf den **Patienten importieren**-Button
-2. Laden Sie die Vorlagendatei herunter (optional)
-3. Ziehen Sie Ihre CSV-Datei per Drag & Drop oder wählen Sie sie aus
-4. Überprüfen Sie die Vorschau
-5. Wählen Sie die Duplikatbehandlung:
-   - **Duplikate überspringen**: Vorhandene Patienten ignorieren
-   - **Duplikate aktualisieren**: Mit neuen Daten überschreiben
-6. Klicken Sie auf **Import starten**
+- Kontaktdaten prüfen
+- Kommende und vergangene Termine sehen
+- Interne Notizen hinzufügen oder bearbeiten
+- Prüfen, ob der Datensatz bereits mit Portal-Aktivität oder aktuellen Buchungen verknüpft ist
 
-#### CSV-Vorlagenspalten
-
-| Spalte | Erforderlich | Beschreibung |
-|--------|--------------|--------------|
-| first_name | Ja | Vorname des Patienten |
-| last_name | Ja | Nachname des Patienten |
-| date_of_birth | Ja | Format: JJJJ-MM-TT |
-| email | Nein | E-Mail-Adresse |
-| phone | Nein | Telefonnummer |
-| medical_record_number | Nein | Vorhandenes Aktenzeichen |
-| gender | Nein | male, female, other |
-| blood_type | Nein | Standard-Blutgruppencodes |
-| address | Nein | Vollständige Adresse |
-| insurance_provider | Nein | Versicherungsgesellschaft |
-| policy_number | Nein | Versicherungsnummer |
-
-**Import-Tipps:**
-- Bereinigen Sie Ihre Daten vor dem Import
-- Verwenden Sie konsistente Datumsformate (JJJJ-MM-TT)
-- Entfernen Sie Sonderzeichen aus Telefonnummern
-- Stellen Sie sicher, dass eindeutige Kennungen wirklich eindeutig sind
+Genkō hält den Ablauf auf operative Datensätze fokussiert, statt vor der Terminbuchung eine schwere Einrichtung zu verlangen.
 
 ---
 
-## Suche und Filterung
+## Berechtigungen und Datenschutz
 
-### Schnellsuche
-- Geben Sie im Suchfeld ein, um Patienten zu finden
-- Durchsucht: Name, E-Mail, Telefon, Aktenzeichen
+Standardmäßig gilt:
 
-### Erweiterte Filter
-Klicken Sie auf **Erweiterte Filter** zum Filtern nach:
-- Aktiv/Inaktiv-Status
-- Geschlecht
-- Altersbereich
-- Versicherungsanbieter
-- Primärer Anbieter
-- Letztes Besuchsdatum
+- **Owners und Admins** können Patientenakten bearbeiten und löschen
+- **Providers und Staff** können Patientenakten lesen
+
+So bleibt der Buchungsablauf schnell, während sensible Änderungen dennoch geschützt werden.
 
 ---
 
-## Patientendetails anzeigen
+## Patienten importieren
 
-Klicken Sie auf einen Patienten, um sein vollständiges Profil anzuzeigen:
+Ein Massenimport ist hilfreich, wenn Sie von einem anderen Planungstool oder einer Tabelle zu Genkō wechseln.
 
-### Patientenprofil-Tabs
+Vor dem Import:
 
-#### 1. Übersicht-Tab
-- Grundlegende Demografie
-- Kontaktinformationen
-- Primärer Anbieter
-- Versicherungsdetails
-- Schnellstatistiken (Erkrankungen, Medikamente usw.)
+- Namen und Kontaktdaten normalisieren
+- Offensichtliche Duplikate entfernen
+- Optionale Notizen knapp halten
 
-#### 2. Krankengeschichte-Tab
-- **Erkrankungen**: Aktive und vergangene Diagnosen
-- **Allergien**: Allergen, Schweregrad, Reaktion
-- **Medikamente**: Aktuelle und vergangene Medikamente
-- **Vitalzeichen**: Verlauf der Vitalzeichen
-
-#### 3. Termine-Tab
-- Vergangene Termine
-- Bevorstehende Termine
-- Schnellplanungs-Button
-
-#### 4. Dokumente-Tab
-- Hochgeladene Dateien
-- Laborergebnisse
-- Überweisungsbriefe
-- Versicherungsdokumente
-
-#### 5. Notfallkontakte-Tab
-- Primärer Notfallkontakt
-- Zusätzliche Kontakte
-- Beziehung und Telefonnummern
+Nach dem Import sollten Sie einige Beispieldatensätze prüfen, um sicherzustellen, dass Namen, E-Mails und Telefonnummern korrekt aussehen, bevor das restliche Team damit arbeitet.
 
 ---
 
-## Patienteninformationen bearbeiten
+## Planlimits
 
-1. Klicken Sie auf die Patientenzeile, um Details zu öffnen
-2. Klicken Sie auf den **Bearbeiten**-Button im Dropdown-Menü
-3. Nehmen Sie Änderungen im Formular vor
-4. Klicken Sie auf **Speichern**
+Die Patientenlimits hängen von Ihrem Abonnement ab:
 
-**Bearbeitbare Bereiche:**
-- Grundinformationen
-- Kontaktdetails
-- Medizinische Informationen
-- Versicherungsdetails
-- Notfallkontakte
+| Plan | Patientenlimit |
+|------|----------------|
+| Free | 100 |
+| Solo | 250 |
+| Starter | 500 |
+| Group | 1.000 |
+| Practice | 5.000 |
+| Enterprise | Unbegrenzt |
 
----
-
-## Krankenakten verwalten
-
-### Allergien hinzufügen
-
-1. Öffnen Sie die Patientendetails
-2. Gehen Sie zum Krankengeschichte-Tab
-3. Klicken Sie auf **Allergie hinzufügen**
-4. Geben Sie ein:
-   - Allergenname
-   - Schweregrad (Leicht, Mittel, Schwer)
-   - Reaktionstyp
-5. Klicken Sie auf **Speichern**
-
-### Erkrankungen hinzufügen
-
-1. Öffnen Sie die Patientendetails
-2. Gehen Sie zum Krankengeschichte-Tab
-3. Klicken Sie auf **Erkrankung hinzufügen**
-4. Geben Sie ein:
-   - Erkrankungsname
-   - ICD-Code (optional)
-   - Status (Aktiv, Gelöst, Chronisch)
-   - Schweregrad
-   - Beginndatum
-5. Klicken Sie auf **Speichern**
-
-### Medikamente hinzufügen
-
-1. Öffnen Sie die Patientendetails
-2. Gehen Sie zum Krankengeschichte-Tab
-3. Klicken Sie auf **Medikament hinzufügen**
-4. Geben Sie ein:
-   - Medikamentenname
-   - Dosierung
-   - Häufigkeit
-   - Startdatum
-   - Status (Aktiv, Abgesetzt)
-5. Klicken Sie auf **Speichern**
-
----
-
-## Massenaktionen
-
-Wählen Sie mehrere Patienten aus, um Massenaktionen durchzuführen:
-
-### So wählen Sie Patienten aus
-
-1. Aktivieren Sie das Kontrollkästchen neben den Patientennamen
-2. Oder klicken Sie auf "Alle auswählen" in der Kopfzeile
-3. Die Massenaktionsleiste erscheint automatisch
-
-### Verfügbare Massenaktionen
-
-| Aktion | Beschreibung |
-|--------|--------------|
-| **Aktivieren** | Ausgewählte Patienten auf aktiv setzen |
-| **Deaktivieren** | Ausgewählte Patienten auf inaktiv setzen |
-| **Löschen** | Patienten dauerhaft löschen |
-| **Exportieren** | Ausgewählte Patientendaten herunterladen |
-
-**Vorsicht:** Löschaktionen können nicht rückgängig gemacht werden. Patientendaten werden dauerhaft gelöscht.
-
----
-
-## Termine aus der Patientenansicht planen
-
-Planen Sie schnell einen Termin aus dem Patientenprofil:
-
-1. Klicken Sie auf die Patientenzeile, um Details anzuzeigen
-2. Klicken Sie auf das **Kalender**-Symbol in den Aktionen
-3. Oder navigieren Sie zum Patientenprofil und klicken Sie auf **Termin planen**
-4. Füllen Sie das Terminformular aus
-5. Klicken Sie auf **Speichern**
-
----
-
-## Patientenstatus
-
-Patienten können zwei Statustypen haben:
-
-| Status | Beschreibung | Auswirkung |
-|--------|--------------|------------|
-| **Aktiv** | Erhält derzeit Behandlung | Erscheint in allen Listen |
-| **Inaktiv** | Derzeit nicht aktiv | Standardmäßig ausgeblendet |
-
-### Einen Patienten deaktivieren
-
-1. Öffnen Sie das Patientenprofil
-2. Klicken Sie auf das Dropdown-Menü (⋮)
-3. Wählen Sie **Deaktivieren**
-4. Bestätigen Sie die Aktion
-
-### Inaktive Patienten anzeigen
-
-1. Gehen Sie zur Patientenseite
-2. Klicken Sie auf Erweiterte Filter
-3. Ändern Sie Status auf "Inaktiv" oder "Alle"
+Wenn Sie das Limit Ihres Plans erreichen, müssen Sie upgraden, bevor Sie weitere Patienten hinzufügen können.
 
 ---
 
 ## Best Practices
 
-### Datenqualität
-1. Überprüfen Sie immer Patienteninformationen beim Check-in
-2. Halten Sie Kontaktinformationen aktuell
-3. Verwenden Sie konsistente Formatierung für Adressen und Telefonnummern
-4. Erfassen Sie Allergien und Medikamente genau
-
-### Datenschutz und Sicherheit
-1. Greifen Sie nur bei Bedarf auf Patientenakten zu
-2. Teilen Sie niemals Patientendaten außerhalb der Plattform
-3. Melden Sie sich ab, wenn Sie Arbeitsstationen verlassen
-4. Melden Sie verdächtige Zugriffe sofort
-
-### Organisation
-1. Verwenden Sie Aktenzeichen konsistent
-2. Weisen Sie allen Patienten primäre Anbieter zu
-3. Vervollständigen Sie Versicherungsinformationen für die Abrechnung
-4. Halten Sie Notfallkontakte aktuell
+- Legen Sie den Patientendatensatz möglichst vor der Buchung an, damit Ihr Team eine einzige Quelle der Wahrheit hat.
+- Nutzen Sie Notizen für operativen Kontext, nicht für lange Freitext-Historien.
+- Halten Sie E-Mail-Adressen aktuell, wenn Sie auf Portalbuchungen und Erinnerungen setzen.
 
 ---
 
-## Fehlerbehebung
+## Verwandte Leitfäden
 
-### Patient erscheint nicht in der Suche
-- Überprüfen Sie, ob der Patient auf "Inaktiv" gesetzt ist
-- Versuchen Sie, nach einem anderen Feld zu suchen (E-Mail, Telefon)
-- Überprüfen Sie, ob der Patient erfolgreich gespeichert wurde
-
-### Doppelte Patienten
-- Suchen Sie nach dem Patienten, bevor Sie einen neuen Datensatz erstellen
-- Verwenden Sie die Duplikaterkennung beim CSV-Import
-- Kontaktieren Sie den Support zum Zusammenführen von Duplikaten
-
-### Importfehler
-- Überprüfen Sie das Datumsformat (JJJJ-MM-TT erforderlich)
-- Stellen Sie sicher, dass Pflichtfelder vorhanden sind
-- Entfernen Sie Sonderzeichen aus Daten
-- Überprüfen Sie die Dateikodierung (UTF-8 empfohlen)
-
----
-
-## Rollenbasierter Zugriff
-
-Verschiedene Rollen haben unterschiedlichen Patientenzugriff:
-
-| Rolle | Anzeigen | Bearbeiten | Löschen |
-|-------|----------|------------|---------|
-| Admin | ✅ Alle | ✅ Alle | ✅ Alle |
-| Anbieter | ✅ Alle | ✅ Zugewiesene | ❌ |
-| Pfleger | ✅ Alle | ✅ Begrenzt | ❌ |
-| Personal | ✅ Basis | ❌ | ❌ |
-
----
-
-*Zurück: [Geschäftsprofil](./03-geschaeftsprofil.md) | Weiter: [Personalverwaltung →](./05-personalverwaltung.md)*
+- [Terminplanung und Termine](./06-terminplanung.md)
+- [Patientenportal und Integrationen](./07-kommunikation.md)
+- [Pläne und Abrechnung](./10-abrechnung.md)

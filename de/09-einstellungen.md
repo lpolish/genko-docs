@@ -1,437 +1,172 @@
 ---
-title: Einstellungen
+title: Einstellungen, KI und API
 layout: default
-parent: Deutsch
 nav_order: 9
-redirect_to: https://getgenko.com/docs
+parent: Deutsch
 ---
 
-# Einstellungen und Konfiguration
+# Einstellungen, KI und API
 
-Der Einstellungsbereich ermöglicht es Ihnen, Genkō an die Bedürfnisse Ihrer Praxis anzupassen. Dieser Leitfaden behandelt alle für Administratoren verfügbaren Konfigurationsoptionen.
-
----
-
-## Zugriff auf Einstellungen
-
-1. Klicken Sie auf **Einstellungen** in der Seitenleiste
-2. URL: `/admin/settings`
+**Settings** ist der Bereich, in dem Owners und Admins festlegen, wie sich Genkō für die gesamte Praxis verhält. Hier werden auch die erweiterten KI-Funktionen und die MCP-API konfiguriert.
 
 ---
 
-## Einstellungsstruktur
+## Was in Settings liegt
 
-Einstellungen sind in Tabs organisiert:
+Die wichtigsten Bereiche sind in der Regel:
 
-| Tab | Zweck |
-|-----|-------|
-| **Konto** | Persönliche Kontoeinstellungen |
-| **Praxis** | Praxisfunktions-Toggles |
-| **Geschäft** | Organisationsinformationen |
-| **Personal** | Teamberechtigungen |
-| **Verfügbarkeit** | Standard-Terminplanung |
-| **Versicherung** | Versicherungsanbieter |
-| **Kommunikation** | Benachrichtigungseinstellungen |
-| **Integrationen** | Externe Verbindungen |
+- **Practice profile** für Organisationsdetails
+- **Services** für Terminarten und Dauern
+- **Members** für Einladungen und Rollen
+- **Portal** für Self-Service-Buchungen
+- **Integrations** für Google Calendar, API-Schlüssel und KI-Steuerung
+- **Billing** für die Planverwaltung
+
+Ein großer Teil der operativen Konfiguration läuft letztlich über Settings, auch wenn die täglichen Aktionen an anderer Stelle stattfinden.
 
 ---
 
-## Kontoeinstellungen
+## KI-Assistent im Dashboard
 
-Persönliche Kontoeinstellungen für den angemeldeten Benutzer.
+In **Practice**-Plänen und höher kann Genkō einen eingebauten KI-Assistenten direkt im Dashboard anzeigen.
 
-### Profilinformationen
+Wenn er aktiviert ist:
 
-| Feld | Beschreibung |
-|------|--------------|
-| Vorname | Ihr Vorname |
-| Nachname | Ihr Nachname |
-| E-Mail | Konto-E-Mail (Login) |
-| Telefon | Kontaktnummer |
+- Erscheint ein schwebendes Chat-Widget im Dashboard
+- Können nur Owners und Admins ihn nutzen
+- Kann der Assistent operative Fragen beantworten und Aktionen ausführen, gestützt auf dieselbe interne Tool-Ebene wie andere KI-Workflows
 
-### Passwort ändern
+Beispiel-Prompts:
 
-1. Aktuelles Passwort eingeben
-2. Neues Passwort eingeben
-3. Neues Passwort bestätigen
-4. **Passwort aktualisieren** klicken
+- "Wer ist heute mein nächster Patient?"
+- "Finde alle Termine eines Patienten in diesem Monat"
+- "Welche Zeitfenster sind für einen Anbieter am Freitag frei?"
+- "Verschiebe diesen Termin auf eine neue Uhrzeit"
 
-**Passwortanforderungen:**
-- Mindestens 8 Zeichen
-- Mischung aus Buchstaben und Zahlen empfohlen
-- Keine häufigen Passwörter
-
-### Zwei-Faktor-Authentifizierung (Demnächst)
-
-- 2FA für zusätzliche Sicherheit aktivieren
-- Authenticator-App oder SMS-Optionen
-- Backup-Codes bereitgestellt
-
-### Benachrichtigungseinstellungen
-
-Steuern Sie, welche E-Mails Sie erhalten:
-
-| Benachrichtigung | Beschreibung |
-|------------------|--------------|
-| Terminerinnerungen | E-Mail für bevorstehende Termine |
-| Neue Nachrichten | Benachrichtigung für Patientennachrichten |
-| Tageszusammenfassung | Tägliche Praxiszusammenfassung |
-| Marketing-Updates | Genkō-Produktaktualisierungen |
+Aktivieren Sie ihn unter **Settings → Integrations** mit **Dashboard AI Assistant**.
 
 ---
 
-## Praxiseinstellungen
+## Was die MCP-API ist
 
-Funktions-Toggles und allgemeine Praxiseinstellungen.
+Genkō stellt einen **Model Context Protocol (MCP)**-Server für externe KI-Agenten und Werkzeuge bereit.
 
-### Funktions-Toggles
+Dadurch können kompatible Clients mit Ihren Genkō-Daten über strukturierte Tool-Aufrufe arbeiten, statt auf Screen Scraping oder Einzelintegrationen angewiesen zu sein.
 
-Funktionen aktivieren oder deaktivieren:
+Der MCP-Endpunkt ist unter folgender Adresse erreichbar:
 
-| Funktion | Beschreibung |
-|----------|--------------|
-| **Telemedizin** | Videokonsultationen aktivieren |
-| **Patientenportal** | Patienten-Selbstbedienung erlauben |
-| **Online-Buchung** | Öffentliche Terminbuchung |
-| **SMS-Erinnerungen** | SMS-Erinnerungen |
-| **KI-Nachrichten** | KI-unterstützter Patientenchat |
-
-### Abrechnungseinstellungen
-
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| Standardwährung | Hauptwährung (EUR, USD, etc.) |
-| Steuersatz | Anwendbarer Steuerprozentsatz |
-| Rechnungspräfix | Benutzerdefinierte Rechnungsnummerierung |
-
-### Termineinstellungen
-
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| Standarddauer | Standard-Terminlänge |
-| Pufferzeit | Minuten zwischen Terminen |
-| Buchungsfenster | Wie weit im Voraus Patienten buchen können |
-| Stornierungsrichtlinie | Erforderliche Vorlaufzeit |
+```text
+https://www.getgenko.com/api/mcp
+```
 
 ---
 
-## Geschäftseinstellungen
+## MCP-Zugriff nach Plan
 
-Einstellungen auf Organisationsebene.
+| Planstufe | MCP-Zugriff |
+|-----------|-------------|
+| Group | Nur Lesezugriff, 1 Schlüssel |
+| Practice und höher | Lesen + Schreiben, 3 Schlüssel |
+| Enterprise | Voller Umfang und unbegrenzte Schlüssel |
 
-### Organisationsdetails
-
-| Feld | Beschreibung |
-|------|--------------|
-| Organisationsname | Praxisname |
-| Rechtlicher Name | Eingetragener Firmenname |
-| Steuer-ID | Geschäftssteuer-Identifikation |
-| Telefon | Haupttelefonnummer |
-| E-Mail | Allgemeine Kontakt-E-Mail |
-
-### Adresse
-
-| Feld | Beschreibung |
-|------|--------------|
-| Adresse | Physische Adresszeile 1 |
-| Zusatz | Adresszeile 2 |
-| Stadt | Stadtname |
-| Bundesland | Bundesland |
-| Postleitzahl | PLZ |
-| Land | Land |
-
-### Branding
-
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| Logo | Organisations-Logo hochladen |
-| Primärfarbe | Marken-Primärfarbe |
-| Zeitzone | Standard-Zeitzone |
+API-Schlüssel werden unter **Settings → Integrations → API Access (MCP)** erstellt.
 
 ---
 
-## Personaleinstellungen
+## Schnellstart
 
-Teamverwaltung und Berechtigungen.
+1. Öffnen Sie **Settings → Integrations**
+2. Fügen Sie einen MCP-Schlüssel hinzu
+3. Benennen Sie den Schlüssel und wählen Sie den Umfang
+4. Kopieren Sie den Schlüssel sofort, da er nur einmal angezeigt wird
+5. Verwenden Sie ihn als Bearer-Token in Ihrem MCP-Client
 
-### Rollenbasierte Zugriffssteuerung (RBAC)
+Beispiel-Konfiguration:
 
-Konfigurieren Sie, was jede Rolle tun kann:
-
-#### Admin-Berechtigungen
-- Vollzugriff auf alle Funktionen
-- Nicht änderbar
-
-#### Anbieter-Berechtigungen
-
-| Berechtigung | Standard |
-|--------------|----------|
-| Alle Patienten anzeigen | ✅ |
-| Patientenakten bearbeiten | ✅ |
-| Termine verwalten | ✅ |
-| Telemedizin-Zugriff | ✅ |
-| Analysen anzeigen | ✅ |
-| Personal verwalten | ❌ |
-
-#### Pfleger-Berechtigungen
-
-| Berechtigung | Standard |
-|--------------|----------|
-| Alle Patienten anzeigen | ✅ |
-| Basis-Patienteninfo bearbeiten | ✅ |
-| Krankenakten anzeigen | ✅ |
-| Krankenakten bearbeiten | ❌ |
-| Termine verwalten | ✅ |
-| Telemedizin-Zugriff | ✅ |
-
-#### Personal-Berechtigungen
-
-| Berechtigung | Standard |
-|--------------|----------|
-| Basis-Patienteninfo anzeigen | ✅ |
-| Patientenakten bearbeiten | ❌ |
-| Krankenakten anzeigen | ❌ |
-| Termine verwalten | ✅ |
-| Telemedizin-Zugriff | ❌ |
-
-### Berechtigungen anpassen
-
-1. Rollenbereich finden
-2. Einzelne Berechtigungen ein-/ausschalten
-3. **Änderungen speichern** klicken
+```json
+{
+  "mcpServers": {
+    "genko": {
+      "url": "https://www.getgenko.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer genko_YOUR_KEY_HERE"
+      }
+    }
+  }
+}
+```
 
 ---
 
-## Verfügbarkeitseinstellungen
+## Authentifizierung und Scopes
 
-Standard-Terminplanungskonfiguration.
+Alle MCP-Anfragen müssen senden:
 
-### Geschäftszeiten
+```text
+Authorization: Bearer genko_...
+```
 
-Standard-Öffnungszeiten festlegen (beeinflusst öffentliche Buchung):
+Verfügbare Scopes:
 
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| Geöffnete Tage | An welchen Tagen Sie arbeiten |
-| Öffnungszeit | Tägliche Öffnungszeit |
-| Schließzeit | Tägliche Schließzeit |
-| Zeitzone | Betriebs-Zeitzone |
+- **Read** für Listen- und Abruf-Tools
+- **Read + Write** für Erstellung und Aktualisierung
+- **Admin** für den umfassendsten Enterprise-Zugriff
 
-### Termintypen
-
-Verfügbare Termintypen konfigurieren:
-
-| Typ | Dauer | Farbe |
-|-----|-------|-------|
-| Neuer Patient | 60 Min | Blau |
-| Nachuntersuchung | 30 Min | Grün |
-| Jahresuntersuchung | 45 Min | Lila |
-| Beratung | 20 Min | Orange |
-| Telemedizin | 30 Min | Cyan |
-
-### Termintypen hinzufügen
-
-1. **Typ hinzufügen** klicken
-2. Name und Dauer eingeben
-3. Anzeigefarbe wählen
-4. Verfügbarkeitsbeschränkungen festlegen
-5. **Speichern** klicken
-
-### Buchungsregeln
-
-| Regel | Beschreibung |
-|-------|--------------|
-| Mindestvorlauf | Stunden bevor Termin gebucht werden kann |
-| Max. Vorausbuchung | Tage im Voraus für Buchung erlaubt |
-| Buchung am selben Tag | Erlauben/Nicht erlauben |
-| Überlappungsverhinderung | Doppelbuchungen blockieren |
+Schlüssel können jederzeit widerrufen werden. Der Widerruf wirkt sofort für neue Anfragen.
 
 ---
 
-## Versicherungseinstellungen
+## Verfügbare MCP-Tools
 
-Akzeptierte Versicherungsanbieter verwalten.
+### Lese-Tools
 
-### Versicherungsanbieterliste
+- `list_appointments`
+- `get_appointment`
+- `list_patients`
+- `get_patient`
+- `list_providers`
+- `get_provider`
+- `list_appointment_types`
+- `check_availability`
 
-Tabelle der konfigurierten Versicherer:
+### Schreib-Tools
 
-| Spalte | Beschreibung |
-|--------|--------------|
-| Anbietername | Versicherungsgesellschaft |
-| Zahler-ID | Elektronische Zahler-ID |
-| Status | Aktiv/Inaktiv |
-| Aktionen | Bearbeiten, Löschen |
+- `create_appointment`
+- `update_appointment`
+- `cancel_appointment`
+- `create_patient`
+- `update_patient`
+- `find_or_create_patient`
 
-### Versicherungsanbieter hinzufügen
-
-1. **Anbieter hinzufügen** klicken
-2. Details eingeben:
-   - Anbietername
-   - Zahler-ID
-   - Kontakttelefon
-   - Einreichungstyp (Elektronisch/Papier)
-3. **Speichern** klicken
-
-### Versicherungsanbieter bearbeiten
-
-1. Bearbeiten-Symbol in der Anbieterzeile klicken
-2. Felder ändern
-3. **Speichern** klicken
-
-### Anbieter deaktivieren
-
-1. Status auf Inaktiv umschalten
-2. Anbieter wird bei neuen Ansprüchen ausgeblendet
-3. Bestehende Ansprüche bleiben erhalten
+Die Erstellung und Aktualisierung von Terminen führt weiterhin serverseitige Konfliktprüfungen aus, sodass MCP-Clients keine stillen Doppelbuchungen erzeugen können.
 
 ---
 
-## Kommunikationseinstellungen
+## Rate Limits
 
-Patientenkommunikation konfigurieren.
+MCP-Schlüssel sind pro Schlüssel in 60-Sekunden-Fenstern rate-limitiert.
 
-### E-Mail-Einstellungen
+- **Standardlimit:** 100 Anfragen pro Minute
+- **Bei Überschreitung:** `HTTP 429 Too Many Requests`
+- **Enterprise:** Höhere Limits sind auf Anfrage über [hello@getgenko.com](mailto:hello@getgenko.com) möglich
 
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| Absendername | Absendername in E-Mails |
-| Antwort-E-Mail | Wohin Antworten gehen |
-| E-Mail-Fußzeile | Benutzerdefinierter Fußzeilentext |
-
-### Erinnerungseinstellungen
-
-| Einstellung | Beschreibung |
-|-------------|--------------|
-| Terminerinnerungen | Aktivieren/Deaktivieren |
-| Erinnerungszeit | Wann senden (24h, 48h, etc.) |
-| SMS-Erinnerungen | SMS-Erinnerungen aktivieren |
-
-### Vorlagen (Demnächst)
-
-Nachrichtenvorlagen anpassen:
-- Terminbestätigung
-- Terminerinnerung
-- Stornierungsbenachrichtigung
-- Nachbereitungsnachrichten
+Die Nutzung der letzten 7 Tage ist im Integrationsbereich neben jedem Schlüssel sichtbar.
 
 ---
 
-## Integrationen
+## Grenzen der KI-Funktionen
 
-Externe Dienste verbinden.
+Der Dashboard-Assistent ist für Mitarbeitende gedacht und nutzt automatisch Ihre aktuelle Sitzung. Er ist getrennt von patientenseitigen KI-Flows wie dem WhatsApp-KI-Scheduler.
 
-### Verfügbare Integrationen
+Diese Unterscheidung ist wichtig:
 
-| Integration | Status | Zweck |
-|-------------|--------|-------|
-| Stripe | Verfügbar | Zahlungsabwicklung |
-| Google Kalender | Demnächst | Kalender-Synchronisation |
-| QuickBooks | Demnächst | Buchhaltung |
-| Zoom | Demnächst | Telemedizin |
-
-### Stripe-Integration
-
-1. Zum Integrationen-Tab navigieren
-2. **Mit Stripe verbinden** klicken
-3. Bei Stripe autorisieren
-4. Verbindung erscheint als Aktiv
-
-### API-Zugang (Growth-Plan)
-
-Für Growth-Plan-Abonnenten:
-- API-Schlüssel-Generierung
-- Webhook-Konfiguration
-- Rate-Limit-Informationen
+- **Dashboard AI** unterstützt Mitarbeitende innerhalb von Genkō
+- **Patientenseitige KI** unterstützt Patienten über Kommunikationskanäle und Buchungs-Workflows
 
 ---
 
-## Einstellungen speichern
+## Verwandte Leitfäden
 
-### Automatisches Speichern
-
-Einige Einstellungen speichern automatisch:
-- Toggle-Schalter
-- Dropdown-Auswahlen
-- Einzelfeldaktualisierungen
-
-### Manuelles Speichern
-
-Andere erfordern explizites Speichern:
-- Komplexe Formulare
-- Massenänderungen
-- Berechtigungsmatrizen
-
-**Achten Sie auf:**
-- "Gespeichert"-Bestätigungstoast
-- "Speichern"-Button-Statusänderung
-- Ladespinner beim Speichern
-
----
-
-## Best Practices
-
-### Ersteinrichtung
-
-1. Geschäftseinstellungen zuerst abschließen
-2. Versicherungsanbieter konfigurieren
-3. Verfügbarkeitsstandards festlegen
-4. Termintypen anpassen
-5. Personalberechtigungen überprüfen
-
-### Regelmäßige Wartung
-
-1. Berechtigungen vierteljährlich überprüfen
-2. Versicherung jährlich aktualisieren
-3. Kontaktinformationen verifizieren
-4. Integrationen regelmäßig testen
-
-### Sicherheit
-
-1. Starke Passwörter verwenden
-2. 2FA aktivieren, wenn verfügbar
-3. Zugriffsprotokolle überprüfen
-4. Berechtigungsvergabe minimieren
-
----
-
-## Fehlerbehebung
-
-### Einstellungen werden nicht gespeichert
-
-- Internetverbindung prüfen
-- Nach Validierungsfehlern suchen
-- Nach unten scrollen für Fehlermeldungen
-- Aktualisieren und erneut eingeben
-
-### Berechtigungsänderungen funktionieren nicht
-
-- Benutzer muss sich möglicherweise ab- und wieder anmelden
-- Browser-Cache leeren
-- Überprüfen, ob richtige Rolle ausgewählt ist
-
-### Integrationsverbindung fehlgeschlagen
-
-- Anmeldedaten überprüfen
-- Drittanbieterdienst verfügbar prüfen
-- Fehlermeldungsdetails überprüfen
-- Support kontaktieren
-
----
-
-## Einstellungen nach Rolle
-
-| Einstellungsbereich | Admin | Anbieter | Pfleger | Personal |
-|---------------------|-------|----------|---------|----------|
-| Konto | Eigenes | Eigenes | Eigenes | Eigenes |
-| Praxis | ✅ | ❌ | ❌ | ❌ |
-| Geschäft | ✅ | ❌ | ❌ | ❌ |
-| Personal | ✅ | ❌ | ❌ | ❌ |
-| Verfügbarkeit | ✅ | Eigene | ❌ | ❌ |
-| Versicherung | ✅ | ❌ | ❌ | ❌ |
-| Kommunikation | ✅ | ❌ | ❌ | ❌ |
-| Integrationen | ✅ | ❌ | ❌ | ❌ |
-
----
-
-*Zurück: [Analyse-Dashboard](./08-analysen.md) | Weiter: [Abrechnung und Abonnement →](./10-abrechnung.md)*
+- [Patientenportal und Integrationen](./07-kommunikation.md)
+- [Pläne und Abrechnung](./10-abrechnung.md)
+- [Schnellreferenz](./11-kurzreferenz.md)

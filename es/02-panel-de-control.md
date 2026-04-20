@@ -1,211 +1,92 @@
 ---
-title: Panel de Control
+title: Panel de control
 layout: default
-parent: Español
 nav_order: 2
-redirect_to: https://getgenko.com/docs
+parent: Español
 ---
 
-# Vista General del Panel de Control
+# Panel de control
 
-El Panel de Control es tu centro de comando en Genkō. Proporciona una vista rápida de las operaciones diarias de tu clínica y métricas importantes.
-
----
-
-## Acceder al Panel de Control
-
-- El Panel de Control es tu página de inicio por defecto después de iniciar sesión
-- Haz clic en **Panel** en la barra lateral o en el icono de Inicio en las migas de pan para regresar en cualquier momento
-- URL: `/admin/dashboard`
+El panel de **Overview** es tu centro operativo. Te da una vista en vivo de reservas, actividad, uso del plan y accesos rápidos sin tener que saltar entre páginas.
 
 ---
 
-## Secciones del Panel de Control
+## Qué muestra el panel
 
-### 1. Encabezado de Saludo
+### Barra de estadísticas
 
-En la parte superior del panel de control, verás:
-- **Saludo personalizado**: "Buenos días/tardes/noches, [Tu Nombre]"
-- **Fecha de hoy**: Formateada según tu configuración regional (ej., "Lunes, 9 de Enero")
-- **Nombre de la organización**: El nombre de tu clínica mostrado en la esquina
+En la parte superior, Genkō destaca los números que la mayoría de las prácticas revisa primero:
 
----
+- Citas de hoy
+- Citas de esta semana
+- Total de pacientes
+- Tamaño del equipo
 
-### 2. Asistente de Incorporación (Nuevos Usuarios)
+Cada métrica aparece junto a un indicador de uso para que veas de inmediato qué tan cerca estás de los límites de tu plan.
 
-Si no has completado la incorporación, verás el banner del **Asistente de Incorporación**:
+### Agenda de hoy
 
-- Muestra tu porcentaje de progreso de configuración
-- Lista los pasos de configuración completados y pendientes
-- Haz clic en cualquier paso para navegar directamente a esa sección
-- Se puede expandir/contraer y descartar cuando esté completo
+Esta sección muestra las citas del día actual con nombre del paciente, hora, servicio, proveedor y estado de la cita. Es la forma más rápida de ver qué está ocurriendo en este momento.
 
-**Pasos de Incorporación:**
-1. Bienvenida (auto-completado)
-2. Completar tu perfil
-3. Agregar tu primer paciente
-4. Invitar a tu equipo
-5. Programar una cita
+### Próximas citas
 
----
+Genkō también muestra el siguiente conjunto de citas de los próximos días, útil para detectar huecos, preparar al equipo o confirmar cobertura de proveedores.
 
-### 3. Alertas Urgentes (Cuando Aplique)
+### Acciones rápidas
 
-Si hay elementos críticos que requieren atención, aparecen en un cuadro de alerta rojo:
-- Citas vencidas
-- Licencias por expirar
-- Problemas de pago
-- Actualizaciones críticas de pacientes
+Las acciones rápidas te permiten ir directo a tareas comunes:
 
-Haz clic en cualquier alerta para abordar el problema directamente.
+- Crear una cita
+- Agregar un paciente
+- Administrar proveedores
+- Abrir analíticas
+
+### Información del plan
+
+El plan actual y el estado de la suscripción son visibles desde el panel para que propietarios y administradores controlen uso y disponibilidad de funciones.
 
 ---
 
-### 4. Tarjetas de Estadísticas Rápidas
+## Tarjetas de funciones de la plataforma
 
-Tres métricas clave se muestran como tarjetas clickeables:
+En planes **Group** y superiores, los administradores también ven tarjetas de estado para funciones avanzadas como:
 
-| Métrica | Descripción | Acción al Clic |
-|---------|-------------|----------------|
-| **Total de Pacientes** | Número de pacientes registrados | Abre la página de Pacientes |
-| **Citas de Hoy** | Citas programadas para hoy | Abre la página de Programación |
-| **Sesiones de Telemedicina** | Consultas por video hoy | Abre la pestaña de Telemedicina |
+- Analíticas
+- WhatsApp
+- HubSpot
+- Asistente de IA
 
-Cada tarjeta muestra:
-- Conteo/valor actual
-- Icono visual
-- Efecto hover para interactividad
+Estas tarjetas sirven como verificación rápida de estado y como atajo a la configuración.
 
 ---
 
-### 5. Agenda del Día
+## Personaliza tu diseño
 
-El área de contenido principal muestra tu agenda diaria:
-
-#### Cuando Hay Citas:
-- Lista de próximas citas para hoy
-- Nombre del paciente
-- Hora de la cita
-- Tipo de cita (Regular/Seguimiento)
-- Insignia de estado (Programada, Confirmada, En Progreso, Completada, Cancelada)
-
-#### Cuando No Hay Citas:
-- Mensaje amigable: "No hay citas programadas"
-- Botón de acción rápida: **"Crear Tu Primera Cita"**
-
-**Acciones de la Agenda:**
-- Haz clic en **"Ver Todo"** para ir a la página completa de Programación
-- Haz clic en cualquier cita para ver detalles
+Usa **Customize** en la esquina superior derecha de Overview para mostrar, ocultar o reordenar secciones del panel. Las preferencias se guardan en tu navegador.
 
 ---
 
-### 6. Panel de Acciones Rápidas
+## Cuándo usar el panel
 
-Un panel lateral con atajos a tareas comunes:
+El panel resulta especialmente útil para:
 
-| Acción | Descripción |
-|--------|-------------|
-| **Agregar Paciente** | Abre el formulario de nuevo paciente |
-| **Programar Cita** | Abre el modal de nueva cita |
-| **Iniciar Telemedicina** | Abre el panel de telemedicina |
-
-Cada acción incluye:
-- Icono claro
-- Título
-- Breve descripción
-- Animación al pasar el cursor
+- Empezar el día con una revisión rápida de la agenda
+- Revisar el uso del plan antes de invitar personal o agregar pacientes
+- Entrar en tareas operativas urgentes
+- Abrir analíticas después de detectar una tendencia que quieras investigar
 
 ---
 
-### 7. Alertas Informativas
+## Buenas prácticas
 
-Notificaciones no urgentes aparecen en una sección separada:
-- Actualizaciones del sistema
-- Recordatorios de renovación de licencias
-- Anuncios de funciones
-- Consejos y sugerencias
-
-Codificadas por color según tipo:
-- 🟡 Borde amarillo: Advertencias
-- 🔵 Borde azul: Información
+- Usa el panel como primera parada cada mañana.
+- Mantén las acciones rápidas enfocadas en las tareas que tu equipo realiza con más frecuencia.
+- Revisa las tarjetas de funciones después de mejorar de plan para que las nuevas capacidades no queden sin configurar.
 
 ---
 
-### 8. Banner de Completación de Perfil
+## Guías relacionadas
 
-En la parte inferior, puede aparecer un **Banner de Completación de Perfil** si tu perfil de negocio necesita atención:
-
-- Muestra el porcentaje de completación del perfil
-- Lista la información faltante
-- Enlace directo para completar tu perfil de negocio
-- Desaparece una vez que el perfil esté completo
-
----
-
-## Consejos del Panel de Control
-
-### Mejores Prácticas
-
-1. **Revisar Diariamente**: Comienza cada día revisando tu panel de control
-2. **Atender Alertas**: Maneja las alertas urgentes inmediatamente
-3. **Completar Perfil**: Un perfil completo mejora la confianza del paciente
-4. **Usar Acciones Rápidas**: Ahorra tiempo con atajos de un clic
-
-### Personalización
-
-El panel de control se adapta según:
-- Tu rol (Admin ve más opciones que Personal)
-- La configuración de tu organización
-- Fecha y hora actual
-- Tu preferencia de idioma/configuración regional
-
----
-
-## Navegación desde el Panel de Control
-
-Desde el panel de control, puedes acceder rápidamente a:
-
-| Destino | Cómo Acceder |
-|---------|--------------|
-| Pacientes | Clic en tarjeta "Total de Pacientes" o barra lateral |
-| Programación | Clic en tarjeta "Citas de Hoy" o barra lateral |
-| Telemedicina | Clic en tarjeta "Sesiones de Telemedicina" |
-| Agregar Paciente | Clic en acción rápida "Agregar Paciente" |
-| Nueva Cita | Clic en acción rápida "Programar Cita" |
-| Perfil de Negocio | Clic en banner de completación de perfil |
-
----
-
-## Vista Móvil
-
-En dispositivos móviles, el panel de control se adapta:
-- Las tarjetas se apilan verticalmente
-- La barra lateral se convierte en un menú hamburguesa
-- Las acciones rápidas permanecen accesibles
-- La agenda muestra vista condensada
-
-Accede a la barra lateral tocando el icono de menú **☰** en la esquina superior izquierda.
-
----
-
-## Solución de Problemas
-
-### El Panel de Control No Carga
-1. Verifica tu conexión a internet
-2. Intenta refrescar la página (F5 o Ctrl/Cmd + R)
-3. Limpia la caché del navegador
-4. Contacta soporte si el problema persiste
-
-### Datos Faltantes
-- Si las estadísticas muestran "0" inesperadamente, los datos pueden estar cargando aún
-- Espera unos segundos para que la página cargue completamente
-- Verifica que estés viendo la organización correcta (si tienes múltiples)
-
-### Las Alertas No Se Descartan
-- Algunas alertas requieren acción para descartarse
-- Haz clic en la alerta para abordar el problema subyacente
-- Una vez resuelto, la alerta desaparecerá automáticamente
-
----
-
-*Anterior: [Primeros Pasos](./01-primeros-pasos.md) | Siguiente: [Gestión del Perfil de Negocio →](./03-perfil-de-negocio.md)*
+- [Primeros pasos](./01-primeros-pasos.md)
+- [Programación y citas](./06-programacion.md)
+- [Analíticas e insights](./08-analiticas.md)

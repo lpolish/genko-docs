@@ -1,211 +1,92 @@
 ---
 title: Dashboard
 layout: default
-parent: Deutsch
 nav_order: 2
-redirect_to: https://getgenko.com/docs
+parent: Deutsch
 ---
 
-# Dashboard-Übersicht
+# Dashboard
 
-Das Dashboard ist Ihre Kommandozentrale in Genkō. Es bietet einen schnellen Überblick über den täglichen Betrieb Ihrer Klinik und wichtige Metriken.
-
----
-
-## Zugriff auf das Dashboard
-
-- Das Dashboard ist Ihre Standard-Startseite nach der Anmeldung
-- Klicken Sie auf **Dashboard** in der Seitenleiste oder auf das Home-Symbol in den Breadcrumbs, um jederzeit zurückzukehren
-- URL: `/admin/dashboard`
+Das **Overview**-Dashboard ist Ihre operative Zentrale. Es bietet eine Live-Ansicht von Buchungen, Aktivität, Planverbrauch und wichtigen Abkürzungen, ohne dass Sie zwischen Seiten wechseln müssen.
 
 ---
 
-## Dashboard-Bereiche
+## Was das Dashboard zeigt
 
-### 1. Begrüßungs-Header
+### Statistikleiste
 
-Oben auf dem Dashboard sehen Sie:
-- **Personalisierte Begrüßung**: "Guten Morgen/Tag/Abend, [Ihr Name]"
-- **Heutiges Datum**: Formatiert nach Ihren Regionaleinstellungen (z.B. "Montag, 9. Januar")
-- **Organisationsname**: Der Name Ihrer Klinik in der Ecke angezeigt
+Oben auf der Seite hebt Genkō die Zahlen hervor, die die meisten Praxen zuerst prüfen:
 
----
+- Heutige Termine
+- Terminanzahl dieser Woche
+- Gesamtzahl der Patienten
+- Teamgröße
 
-### 2. Einrichtungsassistent (Neue Benutzer)
+Jede Kennzahl wird zusammen mit einer Nutzungsanzeige dargestellt, damit Sie schnell sehen, wie nah Sie an den Grenzen Ihres Plans sind.
 
-Wenn Sie die Einrichtung noch nicht abgeschlossen haben, sehen Sie das **Einrichtungsassistent**-Banner:
+### Tagesübersicht
 
-- Zeigt Ihren Einrichtungsfortschritt in Prozent
-- Listet abgeschlossene und ausstehende Einrichtungsschritte
-- Klicken Sie auf einen Schritt, um direkt zu diesem Bereich zu navigieren
-- Kann erweitert/minimiert und nach Abschluss geschlossen werden
+Dieser Abschnitt listet die Termine des aktuellen Tages mit Patient, Uhrzeit, Leistung, Anbieter und Terminstatus auf. Das ist die schnellste Möglichkeit zu sehen, was gerade passiert.
 
-**Einrichtungsschritte:**
-1. Willkommen (automatisch abgeschlossen)
-2. Profil vervollständigen
-3. Ersten Patienten hinzufügen
-4. Team einladen
-5. Termin planen
+### Kommende Termine
 
----
+Genkō zeigt außerdem die nächsten Termine der kommenden Tage an. Das hilft dabei, Lücken zu erkennen, das Team vorzubereiten oder die Anbieterabdeckung zu prüfen.
 
-### 3. Dringende Warnungen (Falls zutreffend)
+### Schnellaktionen
 
-Wenn es kritische Punkte gibt, die Aufmerksamkeit erfordern, erscheinen sie in einem roten Warnfeld:
-- Überfällige Termine
-- Ablaufende Lizenzen
-- Zahlungsprobleme
-- Kritische Patienten-Updates
+Schnellaktionen bringen Sie direkt zu häufigen Aufgaben:
 
-Klicken Sie auf eine Warnung, um das Problem direkt zu beheben.
+- Einen Termin erstellen
+- Einen Patienten hinzufügen
+- Anbieter verwalten
+- Analysen öffnen
+
+### Planinformationen
+
+Ihr aktueller Plan und der Abonnementstatus sind im Dashboard sichtbar, damit Eigentümer und Admins Nutzung und verfügbare Funktionen im Blick behalten.
 
 ---
 
-### 4. Schnellstatistik-Karten
+## Plattform-Funktionskarten
 
-Drei wichtige Metriken werden als anklickbare Karten angezeigt:
+Bei **Group**-Plänen und höher sehen Admins zusätzlich Live-Statuskarten für erweiterte Funktionen wie:
 
-| Metrik | Beschreibung | Klick-Aktion |
-|--------|--------------|--------------|
-| **Gesamtpatienten** | Anzahl der registrierten Patienten | Öffnet Patientenseite |
-| **Heutige Termine** | Für heute geplante Termine | Öffnet Terminplanungsseite |
-| **Telemedizin-Sitzungen** | Heutige Videokonsultationen | Öffnet Telemedizin-Tab |
+- Analysen
+- WhatsApp
+- HubSpot
+- KI-Assistent
 
-Jede Karte zeigt:
-- Aktuelle Anzahl/Wert
-- Visuelles Symbol
-- Hover-Effekt für Interaktivität
+Diese Karten dienen als schneller Status-Check und als Abkürzung zur Konfiguration.
 
 ---
 
-### 5. Heutiger Zeitplan
+## Layout anpassen
 
-Der Hauptinhaltsbereich zeigt Ihren Tagesplan:
-
-#### Wenn Termine vorhanden sind:
-- Liste der bevorstehenden heutigen Termine
-- Patientenname
-- Terminzeit
-- Termintyp (Regulär/Nachuntersuchung)
-- Status-Badge (Geplant, Bestätigt, In Bearbeitung, Abgeschlossen, Abgesagt)
-
-#### Wenn keine Termine vorhanden sind:
-- Freundliche Nachricht: "Keine Termine geplant"
-- Schnellaktion-Button: **"Ersten Termin erstellen"**
-
-**Zeitplan-Aktionen:**
-- Klicken Sie auf **"Alle anzeigen"**, um zur vollständigen Terminplanungsseite zu gelangen
-- Klicken Sie auf einen Termin, um Details anzuzeigen
+Verwenden Sie **Customize** oben rechts in Overview, um Dashboard-Bereiche ein- oder auszublenden oder neu anzuordnen. Die Einstellungen werden in Ihrem Browser gespeichert.
 
 ---
 
-### 6. Schnellaktionen-Panel
+## Wann das Dashboard besonders nützlich ist
 
-Ein Seitenleisten-Panel mit Verknüpfungen zu häufigen Aufgaben:
+Das Dashboard eignet sich besonders für:
 
-| Aktion | Beschreibung |
-|--------|--------------|
-| **Patient hinzufügen** | Öffnet neues Patientenformular |
-| **Termin planen** | Öffnet neues Termin-Modal |
-| **Telemedizin starten** | Öffnet Telemedizin-Dashboard |
-
-Jede Aktion enthält:
-- Klares Symbol
-- Titel
-- Kurze Beschreibung
-- Hover-Animation
+- Den schnellen Tagesstart mit einem Blick auf die Agenda
+- Die Prüfung des Planverbrauchs, bevor Mitarbeiter eingeladen oder Patienten hinzugefügt werden
+- Den Einstieg in dringende operative Aufgaben
+- Das Öffnen der Analysen, nachdem Sie einen Trend entdeckt haben
 
 ---
 
-### 7. Informative Warnungen
+## Best Practices
 
-Nicht dringende Benachrichtigungen erscheinen in einem separaten Bereich:
-- System-Updates
-- Lizenzerneuerungs-Erinnerungen
-- Funktions-Ankündigungen
-- Tipps und Vorschläge
-
-Farbcodiert nach Typ:
-- 🟡 Gelber Rand: Warnungen
-- 🔵 Blauer Rand: Informationen
+- Nutzen Sie das Dashboard jeden Morgen als ersten Anlaufpunkt.
+- Halten Sie Schnellaktionen auf die wichtigsten Teamaufgaben fokussiert.
+- Prüfen Sie Funktionskarten nach einem Plan-Upgrade, damit neue Möglichkeiten nicht unkonfiguriert bleiben.
 
 ---
 
-### 8. Profilvervollständigungs-Banner
+## Verwandte Leitfäden
 
-Unten kann ein **Profilvervollständigungs-Banner** erscheinen, wenn Ihr Geschäftsprofil Aufmerksamkeit benötigt:
-
-- Zeigt Profilvervollständigungsprozentsatz
-- Listet fehlende Informationen
-- Direkter Link zum Vervollständigen Ihres Geschäftsprofils
-- Verschwindet, sobald das Profil vollständig ist
-
----
-
-## Dashboard-Tipps
-
-### Best Practices
-
-1. **Täglich überprüfen**: Beginnen Sie jeden Tag mit einer Überprüfung Ihres Dashboards
-2. **Warnungen beachten**: Behandeln Sie dringende Warnungen sofort
-3. **Profil vervollständigen**: Ein vollständiges Profil verbessert das Patientenvertrauen
-4. **Schnellaktionen nutzen**: Sparen Sie Zeit mit Ein-Klick-Verknüpfungen
-
-### Anpassung
-
-Das Dashboard passt sich an basierend auf:
-- Ihrer Rolle (Admin sieht mehr Optionen als Personal)
-- Ihren Organisationseinstellungen
-- Aktuellem Datum und Uhrzeit
-- Ihrer Sprach-/Regionaleinstellung
-
----
-
-## Navigation vom Dashboard
-
-Vom Dashboard können Sie schnell zugreifen auf:
-
-| Ziel | Zugriffsmethode |
-|------|-----------------|
-| Patienten | Klick auf "Gesamtpatienten"-Karte oder Seitenleiste |
-| Terminplanung | Klick auf "Heutige Termine"-Karte oder Seitenleiste |
-| Telemedizin | Klick auf "Telemedizin-Sitzungen"-Karte |
-| Patient hinzufügen | Klick auf "Patient hinzufügen"-Schnellaktion |
-| Neuer Termin | Klick auf "Termin planen"-Schnellaktion |
-| Geschäftsprofil | Klick auf Profilvervollständigungs-Banner |
-
----
-
-## Mobile Ansicht
-
-Auf mobilen Geräten passt sich das Dashboard an:
-- Karten werden vertikal gestapelt
-- Seitenleiste wird zum Hamburger-Menü
-- Schnellaktionen bleiben zugänglich
-- Zeitplan zeigt komprimierte Ansicht
-
-Tippen Sie auf das Menüsymbol **☰** in der oberen linken Ecke, um die Seitenleiste zu öffnen.
-
----
-
-## Fehlerbehebung
-
-### Dashboard lädt nicht
-1. Überprüfen Sie Ihre Internetverbindung
-2. Versuchen Sie, die Seite zu aktualisieren (F5 oder Strg/Cmd + R)
-3. Browser-Cache leeren
-4. Kontaktieren Sie den Support, wenn das Problem weiterhin besteht
-
-### Fehlende Daten
-- Wenn Statistiken unerwartet "0" zeigen, werden Daten möglicherweise noch geladen
-- Warten Sie einige Sekunden, bis die Seite vollständig geladen ist
-- Überprüfen Sie, ob Sie die richtige Organisation anzeigen (falls mehrere vorhanden)
-
-### Warnungen verschwinden nicht
-- Einige Warnungen erfordern eine Aktion, um zu verschwinden
-- Klicken Sie auf die Warnung, um das zugrundeliegende Problem zu beheben
-- Nach Behebung verschwindet die Warnung automatisch
-
----
-
-*Zurück: [Erste Schritte](./01-erste-schritte.md) | Weiter: [Geschäftsprofilverwaltung →](./03-geschaeftsprofil.md)*
+- [Erste Schritte](./01-erste-schritte.md)
+- [Terminplanung und Termine](./06-terminplanung.md)
+- [Analysen und Insights](./08-analysen.md)

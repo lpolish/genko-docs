@@ -33,4 +33,4 @@ bundle exec jekyll serve
 
 - The Jekyll site is a readable mirror, not just a redirect shell.
 - The live product docs at `getgenko.com/docs` remain the canonical source.
-- Non-English folders still lean on redirect-based content and should be refreshed separately when those mirrors are updated.
+- Non-English folders (`de/`, `es/`, and `ja/`) are maintained mirrors that follow the English documentation structure.
