@@ -20,6 +20,8 @@ Puedes agregar proveedores de dos maneras comunes:
 
 Una vez invitados, los proveedores aparecen en las vistas de programación después de que su perfil y disponibilidad quedan configurados.
 
+![Modal para invitar proveedor con campos de nombre completo y correo](../assets/images/docs/04-add-provider.png)
+
 ---
 
 ## Configurar la disponibilidad del proveedor
@@ -39,6 +41,8 @@ Genkō usa este horario en todos los lugares donde se crean reservas:
 - Reserva de autoservicio en el portal
 
 Si un proveedor no está disponible en un día determinado, ese día simplemente no aparece como reservable.
+
+![Editor de agenda del proveedor con controles por día y campos de hora de inicio y fin](../assets/images/docs/04-provider-availability.png)
 
 ---
 
@@ -66,6 +70,10 @@ Cada invitación incluye:
 - Rol
 
 Genkō envía una invitación por correo con magic link. Las invitaciones pendientes se pueden revisar o revocar desde la página de miembros y vencen después de **72 horas**.
+
+![Modal para invitar miembro del equipo con nombre, correo y rol](../assets/images/docs/04-invite-team-member.png)
+
+![Página de miembros mostrando el equipo y las invitaciones pendientes](../assets/images/docs/06-members-invitations.png)
 
 ---
 

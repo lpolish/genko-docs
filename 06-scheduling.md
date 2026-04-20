@@ -24,6 +24,8 @@ The booking flow typically includes:
 
 When email notifications are enabled, appointment confirmations are sent automatically after the booking is saved.
 
+![New appointment dialog with patient, provider, service, and time fields](assets/images/docs/02-new-appointment.png)
+
 ---
 
 ## Calendar views

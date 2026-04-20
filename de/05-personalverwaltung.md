@@ -20,6 +20,8 @@ Sie können Anbieter auf zwei übliche Arten hinzufügen:
 
 Nach der Einladung erscheinen Anbieter in der Terminplanung, sobald Profil und Verfügbarkeit eingerichtet sind.
 
+![Dialog zum Einladen eines Anbieters mit Feldern für Namen und E-Mail](../assets/images/docs/04-add-provider.png)
+
 ---
 
 ## Anbieter-Verfügbarkeit festlegen
@@ -39,6 +41,8 @@ Genkō nutzt diesen Zeitplan überall dort, wo Buchungen erstellt werden:
 - Self-Service-Buchung im Portal
 
 Wenn ein Anbieter an einem bestimmten Tag nicht verfügbar ist, erscheint dieser Tag einfach nicht als buchbar.
+
+![Editor für Anbieterzeiten mit Wochentags-Schaltern sowie Start- und Endzeitfeldern](../assets/images/docs/04-provider-availability.png)
 
 ---
 
@@ -66,6 +70,10 @@ Jede Einladung enthält:
 - Rolle
 
 Genkō versendet eine Einladung per Magic Link. Ausstehende Einladungen können auf der Mitgliederseite überprüft oder widerrufen werden und laufen nach **72 Stunden** ab.
+
+![Dialog zum Einladen eines Teammitglieds mit Name, E-Mail und Rollenfeld](../assets/images/docs/04-invite-team-member.png)
+
+![Mitgliederseite mit Teamliste und ausstehenden Einladungen](../assets/images/docs/06-members-invitations.png)
 
 ---
 

@@ -63,6 +63,8 @@ These cards act as a fast status check and a shortcut to configuration.
 
 Use **Customize** in the top-right corner of the overview to show, hide, or reorder dashboard sections. Preferences are saved in your browser, so your layout stays the way you like it.
 
+![Dashboard overview showing stats and upcoming appointments](assets/images/docs/01-dashboard.png)
+
 ---
 
 ## When to use the dashboard

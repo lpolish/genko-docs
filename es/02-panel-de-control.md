@@ -64,6 +64,8 @@ Estas tarjetas sirven como verificación rápida de estado y como atajo a la con
 
 Usa **Customize** en la esquina superior derecha de Overview para mostrar, ocultar o reordenar secciones del panel. Las preferencias se guardan en tu navegador.
 
+![Resumen del dashboard con métricas y próximas citas](../assets/images/docs/01-dashboard.png)
+
 ---
 
 ## Cuándo usar el panel

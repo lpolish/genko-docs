@@ -13,6 +13,8 @@ Gemfile.lock
 backup-jekyll/
 blog/
 docs/
+!assets/images/docs/
+!assets/images/docs/*.png
 src/
 static/
 package.json

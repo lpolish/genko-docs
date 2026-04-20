@@ -25,6 +25,8 @@ El flujo de reserva normalmente incluye:
 
 Cuando las notificaciones por correo están activadas, las confirmaciones se envían automáticamente después de guardar la cita.
 
+![Modal de nueva cita con paciente, proveedor, servicio y campos de horario](../assets/images/docs/02-new-appointment.png)
+
 ---
 
 ## Vistas del calendario

@@ -19,6 +19,8 @@ You can add providers in two common ways:
 
 Once invited, providers appear in scheduling views after their profile and availability are configured.
 
+![Invite provider dialog with full name and email fields](assets/images/docs/04-add-provider.png)
+
 ---
 
 ## Setting provider availability
@@ -38,6 +40,8 @@ Genkō uses this schedule everywhere bookings are created:
 - Patient self-booking in the portal
 
 If a provider is unavailable on a given day, that day simply does not appear as bookable.
+
+![Provider schedule editor with weekday toggles and start and end time fields](assets/images/docs/04-provider-availability.png)
 
 ---
 
@@ -65,6 +69,10 @@ Each invitation includes:
 - Role
 
 Genkō sends a magic-link invitation by email. Pending invites can be reviewed or revoked from the Members page, and invitations expire after **72 hours**.
+
+![Invite team member dialog with full name, email, and role fields](assets/images/docs/04-invite-team-member.png)
+
+![Members page showing team list and pending invitations](assets/images/docs/06-members-invitations.png)
 
 ---
 

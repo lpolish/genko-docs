@@ -64,6 +64,8 @@ Diese Karten dienen als schneller Status-Check und als Abkürzung zur Konfigurat
 
 Verwenden Sie **Customize** oben rechts in Overview, um Dashboard-Bereiche ein- oder auszublenden oder neu anzuordnen. Die Einstellungen werden in Ihrem Browser gespeichert.
 
+![Dashboard-Übersicht mit Kennzahlen und kommenden Terminen](../assets/images/docs/01-dashboard.png)
+
 ---
 
 ## Wann das Dashboard besonders nützlich ist

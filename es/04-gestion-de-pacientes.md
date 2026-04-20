@@ -25,6 +25,8 @@ Los campos más comunes son:
 
 Si estás migrando una lista existente, usa **Import** para subir un CSV o un archivo de Excel en lugar de volver a capturarlo todo manualmente.
 
+![Modal para agregar paciente con nombre, correo, teléfono y notas](../assets/images/docs/03-add-patient.png)
+
 ---
 
 ## Ver registros de pacientes

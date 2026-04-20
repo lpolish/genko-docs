@@ -24,6 +24,8 @@ Una vez activo, tu práctica obtiene un enlace público de reserva basado en el 
 
 Antes de publicar el enlace, asegúrate de que tus servicios y horarios de proveedores sean correctos.
 
+![Página de configuración del portal del paciente con interruptor de activación y URL pública](../assets/images/docs/07-patient-portal.png)
+
 ---
 
 ## Cómo funciona la reserva de autoservicio
@@ -64,6 +66,8 @@ Para conectarlo:
 3. Inicia sesión con la cuenta de Google que quieres sincronizar
 4. Otorga permisos de calendario
 5. Selecciona el calendario de destino y confirma
+
+![Página de integraciones mostrando la tarjeta de conexión con Google Calendar](../assets/images/docs/08-integrations.png)
 
 ---
 

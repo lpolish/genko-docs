@@ -23,6 +23,8 @@ Once enabled, your practice gets a public booking link based on your organizatio
 
 Before you publish the link, make sure your services and provider schedules are accurate.
 
+![Patient portal settings page with enable toggle and public booking URL](assets/images/docs/07-patient-portal.png)
+
 ---
 
 ## How self-booking works
@@ -63,6 +65,8 @@ To connect:
 3. Sign in with the Google account you want to sync
 4. Grant calendar permissions
 5. Select the destination calendar and confirm
+
+![Integrations page showing the Google Calendar connection card](assets/images/docs/08-integrations.png)
 
 ---
 

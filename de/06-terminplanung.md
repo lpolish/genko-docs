@@ -25,6 +25,8 @@ Der Buchungsablauf umfasst typischerweise:
 
 Wenn E-Mail-Benachrichtigungen aktiviert sind, werden Terminbestätigungen nach dem Speichern automatisch versendet.
 
+![Dialog für neue Termine mit Patient, Anbieter, Leistung und Zeitfeldern](../assets/images/docs/02-new-appointment.png)
+
 ---
 
 ## Kalenderansichten

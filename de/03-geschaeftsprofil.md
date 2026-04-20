@@ -60,6 +60,8 @@ Sie können:
 
 Archivieren ist in der Regel besser als Löschen, weil so der Kontext vergangener Termine erhalten bleibt.
 
+![Leistungsseite mit Terminarten, Dauern sowie Aktionen zum Hinzufügen und Bearbeiten](../assets/images/docs/05-edit-service.png)
+
 ---
 
 ## Praktische Einrichtungs-Tipps

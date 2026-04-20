@@ -25,6 +25,8 @@ Die häufigsten Felder sind:
 
 Wenn Sie eine bestehende Liste migrieren, verwenden Sie **Import**, um eine CSV- oder Excel-Datei hochzuladen, statt Daten einzeln neu einzugeben.
 
+![Dialog zum Hinzufügen eines Patienten mit Name, E-Mail, Telefon und Notizen](../assets/images/docs/03-add-patient.png)
+
 ---
 
 ## Patientenakten ansehen

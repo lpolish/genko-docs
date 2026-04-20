@@ -24,6 +24,8 @@ Sobald das Portal aktiv ist, erhält Ihre Praxis einen öffentlichen Buchungslin
 
 Bevor Sie den Link veröffentlichen, sollten Leistungen und Anbieterzeitpläne stimmen.
 
+![Einstellungsseite des Patientenportals mit Aktivierungsschalter und öffentlicher Buchungs-URL](../assets/images/docs/07-patient-portal.png)
+
 ---
 
 ## So funktioniert Self-Service-Buchung
@@ -64,6 +66,8 @@ So verbinden Sie die Integration:
 3. Melden Sie sich mit dem Google-Konto an, das synchronisiert werden soll
 4. Erteilen Sie Kalender-Berechtigungen
 5. Wählen Sie den Zielkalender und bestätigen Sie
+
+![Integrationsseite mit der Verbindungskarte für Google Calendar](../assets/images/docs/08-integrations.png)
 
 ---
 

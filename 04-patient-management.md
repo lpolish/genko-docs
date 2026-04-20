@@ -24,6 +24,8 @@ The most common fields are:
 
 If you are migrating an existing list, use **Import** to upload a CSV or Excel file instead of re-entering records one by one.
 
+![Add patient dialog with name, email, phone, and notes fields](assets/images/docs/03-add-patient.png)
+
 ---
 
 ## Viewing patient records

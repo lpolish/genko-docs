@@ -60,6 +60,8 @@ Puedes:
 
 Archivar suele ser mejor que eliminar porque conserva el contexto de las citas pasadas.
 
+![Página de servicios con tipos de cita, duraciones y acciones para agregar o editar](../assets/images/docs/05-edit-service.png)
+
 ---
 
 ## Consejos prácticos de configuración

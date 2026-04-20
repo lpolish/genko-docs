@@ -59,6 +59,8 @@ You can:
 
 Archiving is usually better than deleting because it preserves context for past appointments.
 
+![Services page showing appointment types, durations, and add and edit actions](assets/images/docs/05-edit-service.png)
+
 ---
 
 ## Practical setup advice
