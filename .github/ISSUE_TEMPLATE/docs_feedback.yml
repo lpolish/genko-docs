@@ -1,0 +1,45 @@
+name: Docs feedback
+description: Report an error, gap, or improvement in these documentation pages.
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found something wrong or missing in these docs? Let us know.
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page or section?
+      placeholder: "Example: 06-scheduling.md — Rescheduling an appointment"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of issue
+      options:
+        - Incorrect information
+        - Outdated information
+        - Missing information
+        - Unclear or confusing wording
+        - Broken link
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is wrong or missing?
+      description: Quote the relevant text or describe the gap.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction or addition
+      description: Optional — paste corrected text or describe what you'd like to see.

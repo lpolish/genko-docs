@@ -1,0 +1,58 @@
+name: Feature request / feedback
+description: Suggest an improvement or new feature for the Genkō application.
+title: "[Feature] "
+labels: ["enhancement", "feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We appreciate product feedback. Please describe what you'd like to see and the problem it would solve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the workflow or pain point this feature would address.
+      placeholder: "Example: I spend a lot of time manually confirming appointments by phone because there's no automated reminder."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like to see?
+      description: Describe the feature or change you have in mind.
+      placeholder: "Example: An automated SMS or email reminder sent 24 hours before each appointment."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the application?
+      options:
+        - Dashboard / Overview
+        - Appointments & Scheduling
+        - Patients
+        - Providers & Staff
+        - Patient Portal / Self-booking
+        - Google Calendar Sync
+        - Analytics
+        - Settings
+        - Billing & Plans
+        - AI / MCP API
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have considered
+      description: Any workarounds you currently use, or other tools that handle this well.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, examples, or any other information that would help.
